@@ -15,10 +15,7 @@ sidebar_position: 3
 **升级工作主要分为两个部分：**
 1. **结构固定**：使用转接支架固定新盒子，使轮子驱动、电源盒、算力盒呈垂直排列固定。
 
-   <figure className="img-container">
-     <img src={require('./img/powerbox-structure.png').default} width="500" alt="三层结构示意图" style={{ cursor: 'zoom-in' }} />
-     <figcaption>图示：三层垂直排列结构。最上层为轮子驱动，中层为电源盒，下层为算力盒。</figcaption>
-   </figure>
+![三层垂直排列结构。最上层为轮子驱动，中层为电源盒，下层为算力盒。|500](./img/powerbox-structure.png)
 
 2. **接线调整**：部分端子有所变动，需配合全套替换线材进行连接。
 
@@ -40,15 +37,9 @@ sidebar_position: 3
 *   **电源盒**：负责电力分配与管理。
 *   **算力盒**：负责核心计算与传感器数据管理。
 
-<figure className="img-container">
-  <img src={require('./img/computing-box-interfaces.png').default} width="600" alt="算力盒接口总览" style={{ cursor: 'zoom-in' }} />
-  <figcaption>图示：算力盒接口总览</figcaption>
-</figure>
+![算力盒接口总览|600](./img/computing-box-interfaces.png)
 
-<figure className="img-container">
-  <img src={require('./img/power-box-interfaces.png').default} width="600" alt="电源盒接口总览" style={{ cursor: 'zoom-in' }} />
-  <figcaption>图示：电源盒接口总览</figcaption>
-</figure>
+![电源盒接口总览|600](./img/power-box-interfaces.png)
 
 ---
 

@@ -16,18 +16,18 @@ docs/category-name/
 ```
 
 ## 2. Image Display & Zoom Rules
-- **Reference Method**: Use the `<img>` tag with `require` for local images to ensure compatibility with MDX and build systems.
-- **Zoom Functionality**: To support the `docusaurus-plugin-image-zoom` popup effect, add `style={{ cursor: 'zoom-in' }}`.
-- **Sizing**: Use the `width` attribute to control the display size (standard: `600` for clear details, `500` for smaller diagrams).
-- **Caption**: Always follow an image with an italicized caption.
+- **Simple Method**: Use standard Markdown image syntax with an optional width parameter for better control. The system will automatically wrap it in a centered container with zoom support.
+- **Syntax**: `![Description|Width](./img/filename.png)`
+- **Width**: Default is `600`. Specify `500` for smaller diagrams.
 
 **Required Format:**
-```html
-<figure className="img-container">
-  <img src={require('./img/filename.png').default} width="600" alt="Description" style={{ cursor: 'zoom-in' }} />
-  <figcaption>图示：描述内容</figcaption>
-</figure>
+```markdown
+![描述内容|600](./img/filename.png)
 ```
+
+## 3. Advanced Customization (Optional)
+If you need complex HTML, you can still use the `<figure>` tag, but ensure the `img` doesn't get double-wrapped (support for this is built-in).
+
 
 ## 3. Sidebar Rules
 - When moving a file to a folder-based structure, update `sidebars.js` to point to `folder-name/index`.
