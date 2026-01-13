@@ -57,13 +57,7 @@ const config = {
                     editUrl:
                         'https://github.com/autoxingtech/core_docs/tree/main/',
                 },
-                blog: {
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl:
-                        'https://github.com/autoxingtech/core_docs/tree/main/',
-                },
+                blog: false,
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
@@ -89,7 +83,11 @@ const config = {
                         position: 'left',
                         label: 'Documentation',
                     },
-                    { to: '/blog', label: 'Updates', position: 'left' },
+                    {
+                        href: 'https://autoxingtech.github.io/axbot_rest_book/',
+                        label: 'Robot REST API',
+                        position: 'left',
+                    },
                     {
                         href: 'https://github.com/autoxingtech/core_docs',
                         label: 'GitHub',
@@ -110,19 +108,6 @@ const config = {
                             {
                                 label: 'Hardware Installation',
                                 to: '/docs/category/hardware-installation',
-                            },
-                            {
-                                label: 'Troubleshooting',
-                                to: '/docs/category/troubleshooting',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Resources',
-                        items: [
-                            {
-                                label: 'Updates Blog',
-                                to: '/blog',
                             },
                         ],
                     },

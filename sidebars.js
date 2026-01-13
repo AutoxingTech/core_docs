@@ -24,21 +24,8 @@ const sidebars = {
             },
             collapsed: false,
             items: [
-                'hardware-installation/getting-started',
                 'hardware-installation/rk3588-powerbox/index',
                 'hardware-installation/raspberry-pi-to-powerbox-upgrade/index',
-            ],
-        },
-        {
-            type: 'category',
-            label: 'Troubleshooting',
-            link: {
-                type: 'generated-index',
-                description: 'Diagnose and fix common problems with your robots.',
-            },
-            collapsed: false,
-            items: [
-                'troubleshooting/common-issues',
             ],
         },
     ],

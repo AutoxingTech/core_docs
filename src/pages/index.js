@@ -15,13 +15,6 @@ function HomepageHeader() {
                     {siteConfig.title}
                 </Heading>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
-                <div className={styles.buttons}>
-                    <Link
-                        className="button button--secondary button--lg"
-                        to="/docs/intro">
-                        Get Started
-                    </Link>
-                </div>
             </div>
         </header>
     );
@@ -37,15 +30,20 @@ export default function Home() {
             <main>
                 <div className="container" style={{ padding: '2rem' }}>
                     <div className="row">
-                        <div className="col col--6">
-                            <h2>📦 Hardware Installation</h2>
-                            <p>Guides for installing new hardware components.</p>
-                            <Link to="/docs/hardware-installation/getting-started">View Guides →</Link>
+                        <div className="col col--4">
+                            <h2>📦 RK3588 Powerbox</h2>
+                            <p>Introduction and advantages of the RK3588 Powerbox solution.</p>
+                            <Link to="/docs/hardware-installation/rk3588-powerbox/">Learn More →</Link>
                         </div>
-                        <div className="col col--6">
-                            <h2>🔧 Troubleshooting</h2>
-                            <p>Diagnose and fix common problems.</p>
-                            <Link to="/docs/troubleshooting/common-issues">View Guides →</Link>
+                        <div className="col col--4">
+                            <h2>🛠️ Platform Upgrade</h2>
+                            <p>Guide for upgrading from Raspberry Pi to the Powerbox platform.</p>
+                            <Link to="/docs/hardware-installation/raspberry-pi-to-powerbox-upgrade/">Upgrade Guide →</Link>
+                        </div>
+                        <div className="col col--4">
+                            <h2>🌐 API Reference</h2>
+                            <p>Explore our REST API documentation.</p>
+                            <Link href="https://autoxingtech.github.io/axbot_rest_book/">Autoxing Robot REST API →</Link>
                         </div>
                     </div>
                 </div>
