@@ -23,8 +23,10 @@ docs/category-name/
 
 **Required Format:**
 ```html
-<img src={require('./img/filename.png').default} width="600" alt="Description" style={{ cursor: 'zoom-in' }} />
-*图示：描述内容（点击放大）*
+<figure className="img-container">
+  <img src={require('./img/filename.png').default} width="600" alt="Description" style={{ cursor: 'zoom-in' }} />
+  <figcaption>图示：描述内容</figcaption>
+</figure>
 ```
 
 ## 3. Sidebar Rules

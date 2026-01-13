@@ -8,7 +8,10 @@ sidebar_position: 2
 
 新的算力平台基于 RK3588 研发，封装成两个部件：算力盒 + 电源盒，用以替换老一代平台（树莓派4B）。
 
-![image](https://doc.autoxing.com/upload/images/2024/10/b9bbdf0611d84c59.png)
+<figure className="img-container">
+  <img src={require('./img/rk3588-overview.png').default} width="600" alt="RK3588 算力盒与电源盒" style={{ cursor: 'zoom-in' }} />
+  <figcaption>图示：RK3588 算力盒与电源盒方案</figcaption>
+</figure>
 
 ## 主要功能性区别
 
