@@ -46,6 +46,99 @@
     text-align: center;
 }
 
+/* 小图标缩略图模式 */
+.inline-zoom-wrapper {
+    display: inline-block;
+    vertical-align: baseline;
+    cursor: zoom-in;
+}
+
+.inline-zoom-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: -7px;
+    margin: 0 4px;
+    background-color: var(--ifm-background-surface-color);
+    border-radius: 4px;
+    padding: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.inline-zoom-wrapper:hover .inline-zoom-icon {
+    transform: scale(1.15);
+    background-color: var(--ifm-color-primary-lightest);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom lightbox for inline images - matches medium-zoom plugin style */
+.inline-lightbox-overlay {
+    position: fixed;
+    top: var(--ifm-navbar-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 199;
+    cursor: zoom-out;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.inline-lightbox-overlay.closing {
+    opacity: 0;
+}
+
+[data-theme='dark'] .inline-lightbox-overlay {
+    background: rgb(50, 50, 50);
+}
+
+.inline-lightbox-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: zoomIn 0.3s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+}
+
+.inline-lightbox-content.closing {
+    animation: zoomOut 0.3s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: translate(var(--start-x, 0), var(--start-y, 0)) scale(0.05);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(var(--start-x, 0), var(--start-y, 0)) scale(0.05);
+    }
+}
+
+.inline-lightbox-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
 /* 强制调整文章标题字号 */
 .markdown h1 {
     font-size: 1.6rem !important;
