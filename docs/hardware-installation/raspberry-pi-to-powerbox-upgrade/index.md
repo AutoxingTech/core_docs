@@ -41,27 +41,23 @@ sidebar_position: 3
 
 ![电源盒接口总览|600](./img/power-box-interfaces.png)
 
----
-
 ## 线材说明
 
 ### 电源盒配套线材
 
-*   电池通讯线
-*   2x2P 灯带线
-*   2x3P 12V 电源输出线
-*   2x4P 轮子和顶升电源输出线
-*   CAN 通讯线
+*   电池通讯线 ![点击查看详情|24|inline](./img/battery-cable.png)
+*   2x2P 灯带线 ![点击查看详情|24|inline](./img/light-strip-cable.png)
+*   2x3P 12V 电源输出线 ![点击查看详情|24|inline](./img/12v-power-cable.png)
+*   2x4P 轮子和顶升电源输出线 ![点击查看详情|24|inline](./img/wheel-lift-power-cable.png)
+*   CAN 通讯线 ![点击查看详情|24|inline](./img/can-communication-cable.png)
+*   开机和急停按钮线 ![点击查看详情|24|inline](./img/power-button-cable.png)
 
 ### 算力盒配套线材
 
-*   开机和急停按钮线
-*   蓝海 25D 激光雷达线
-*   顶升串口线
-*   轮子信号线
-*   USB Type-A 转 Type-C 线
-
----
+*   蓝海 25D 激光雷达线 ![点击查看详情|24|inline](./img/lidar-cable.png)
+*   顶升串口线 ![点击查看详情|24|inline](./img/lift-serial-cable.png)
+*   轮子信号线 ![点击查看详情|24|inline](./img/wheel-signal-cable.png)
+*   USB Type-A 转 Type-C 线 ![点击查看详情|24|inline](./img/usb-atoc-cable.png)
 
 ## 老平台主板接口对照表
 
@@ -83,9 +79,11 @@ sidebar_position: 3
 | **深度相机** | 使用 **Type-A 转 Type-C 线**，连接在算力盒前方。 |
 | **电源开关 + 急停开关** | 合并为 6-pin 端子，连接至**电源盒**。 |
 
----
-
 ## 天线安装指南
+
+![天线安装完成效果图|300](./img/antenna-installation.png)
+
+![天线端子图|300](./img/antenna-terminals.png)
 
 系统附带了 4 个 FPC 天线及其配套支架：
 
@@ -94,13 +92,11 @@ sidebar_position: 3
 *   **WIFI 天线 (1m x1)**：**新增件**，安装于机器人前方，提升信号覆盖。
 *   **支架 (x2)**：分别安装于机器人车体的前方 and 后方。
 
+![天线样品图|600](./img/antenna-samples.png)
+
 :::warning 注意
 4G 通讯天线与 2.4G 天线（WIFI/ESP-Now）的频段不同。虽然它们都采用了 SMA 接口，但**严禁混用**，否则会严重影响信号质量。
 :::
-
----
-
-## WIFI 天线推荐安装方案
 
 1.  **天线选择建议：**
     *   **增益**：应使用低增益（3dB）的全向天线。高增益天线定向性过强，不适合移动机器人平台。
