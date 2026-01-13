@@ -3,5 +3,8 @@
         "node_modules/": true,
         "build/": true,
         ".docusaurus/": true
+    },
+    "[markdown]": {
+        "editor.wordWrap": "off"
     }
 }
