@@ -29,9 +29,12 @@ docs/category-name/
 If you need complex HTML, you can still use the `<figure>` tag, but ensure the `img` doesn't get double-wrapped (support for this is built-in).
 
 
-## 3. Sidebar Rules
+## 4. Sidebar Rules
 - When moving a file to a folder-based structure, update `sidebars.js` to point to `folder-name/index`.
 
-## 4. Environment Requirements
+## 5. Markdown Formatting Rules
+- **Blank Lines**: Always leave a blank line after headers (`#`, `##`, `###`, etc.) before the start of the next content (paragraphs, lists, images, etc.).
+
+## 6. Environment Requirements
 - Ensure `docusaurus-plugin-image-zoom` is installed and configured in `docusaurus.config.js`.
 - Always use relative paths (`./img/...`) for images within folder-based documents.
