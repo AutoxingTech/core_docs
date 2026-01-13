@@ -26,7 +26,16 @@ const config = {
     trailingSlash: false,
 
     onBrokenLinks: 'throw',
-    onBrokenMarkdownLinks: 'warn',
+
+    markdown: {
+        hooks: {
+            onBrokenMarkdownLinks: 'warn',
+        }
+    },
+
+    plugins: [
+        'docusaurus-plugin-image-zoom'
+    ],
 
     // Even if you don't use internalization, you can use this field to set useful
     // metadata like html lang. For example, if your site is Chinese, you may want
@@ -134,6 +143,16 @@ const config = {
                 darkTheme: darkCodeTheme,
                 additionalLanguages: ['bash', 'json', 'yaml'],
             },
+            zoom: {
+                selector: '.markdown :not(em) > img',
+                config: {
+                    // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+                    background: {
+                        light: 'rgb(255, 255, 255)',
+                        dark: 'rgb(50, 50, 50)'
+                    }
+                }
+            }
         }),
 };
 

@@ -25,8 +25,8 @@ const sidebars = {
             collapsed: false,
             items: [
                 'hardware-installation/getting-started',
-                'hardware-installation/rk3588-powerbox',
-                'hardware-installation/raspberry-pi-to-powerbox-upgrade',
+                'hardware-installation/rk3588-powerbox/index',
+                'hardware-installation/raspberry-pi-to-powerbox-upgrade/index',
             ],
         },
         {
