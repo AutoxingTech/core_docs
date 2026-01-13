@@ -144,7 +144,7 @@ const config = {
                 additionalLanguages: ['bash', 'json', 'yaml'],
             },
             zoom: {
-                selector: '.markdown :not(em) > img',
+                selector: '.markdown img',
                 config: {
                     // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
                     background: {
