@@ -107,7 +107,7 @@ const config = {
                             },
                             {
                                 label: '硬件安装',
-                                to: '/docs/category/hardware-installation',
+                                to: '/docs/hardware-installation/getting-started',
                             },
                         ],
                     },
