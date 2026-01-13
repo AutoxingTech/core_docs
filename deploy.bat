@@ -1,28 +1,36 @@
 @echo off
-REM Build and deploy to GitHub Pages
-REM Usage: deploy.bat
+setlocal enabledelayedexpansion
 
-echo Building Docusaurus site...
+echo [1/5] Building static files...
 call npm run build
-
 if %ERRORLEVEL% NEQ 0 (
-    echo Build failed!
+    echo [ERROR] Build failed!
     exit /b 1
 )
 
-echo.
-echo Deploying to GitHub Pages...
-call npm run deploy
+echo [2/5] Entering build directory...
+cd build
 
-if %ERRORLEVEL% NEQ 0 (
-    echo Deploy failed!
-    echo.
-    echo Make sure you have:
-    echo 1. Set GIT_USER environment variable
-    echo 2. Configured organizationName and projectName in docusaurus.config.js
-    echo 3. Have push access to the repository
+REM Access Check
+if not exist "index.html" (
+    echo [ERROR] Build output not found in build directory!
+    cd ..
     exit /b 1
 )
 
-echo.
-echo Deployment complete!
+REM Create .nojekyll to prevent GitHub Pages from ignoring files starting with underscore
+echo. > .nojekyll
+
+echo [3/5] Initializing temporary git repo...
+git init
+git add -A
+git commit -m "deploy: %date% %time%"
+
+echo [4/5] Force pushing to GitHub...
+REM Using SSH for deployment as requested
+git push -f git@github.com:autoxingtech/core_docs.git master:gh-pages
+
+echo [5/5] Cleaning up...
+cd ..
+echo [SUCCESS] Deployment complete!
+pause
