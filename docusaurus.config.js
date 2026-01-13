@@ -7,8 +7,8 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Robot Documentation',
-    tagline: 'Installation, Diagnostics & Troubleshooting Guides',
+    title: '机器人项目文档中心',
+    tagline: '安装、诊断与故障排除指南',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -41,8 +41,8 @@ const config = {
     // metadata like html lang. For example, if your site is Chinese, you may want
     // to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: 'en',
-        locales: ['en'],
+        defaultLocale: 'zh-Hans',
+        locales: ['zh-Hans'],
     },
 
     presets: [
@@ -71,9 +71,9 @@ const config = {
             // Replace with your project's social card
             image: 'img/robot-social-card.jpg',
             navbar: {
-                title: 'Robot Docs',
+                title: '机器人项目文档',
                 logo: {
-                    alt: 'Robot Documentation Logo',
+                    alt: '机器人项目文档 Logo',
                     src: 'img/logo.svg',
                 },
                 items: [
@@ -81,11 +81,11 @@ const config = {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
                         position: 'left',
-                        label: 'Documentation',
+                        label: '文档',
                     },
                     {
                         href: 'https://autoxingtech.github.io/axbot_rest_book/',
-                        label: 'Robot REST API',
+                        label: '机器人 REST API',
                         position: 'left',
                     },
                     {
@@ -99,20 +99,20 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        title: 'Documentation',
+                        title: '文档',
                         items: [
                             {
-                                label: 'Getting Started',
+                                label: '快速入门',
                                 to: '/docs/intro',
                             },
                             {
-                                label: 'Hardware Installation',
+                                label: '硬件安装',
                                 to: '/docs/category/hardware-installation',
                             },
                         ],
                     },
                     {
-                        title: 'More',
+                        title: '更多',
                         items: [
                             {
                                 label: 'GitHub',
@@ -121,7 +121,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} Robot Documentation. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} 机器人项目文档中心. Built with Docusaurus.`,
             },
             prism: {
                 theme: lightCodeTheme,

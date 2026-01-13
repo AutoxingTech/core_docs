@@ -17,10 +17,10 @@ const sidebars = {
         'intro',
         {
             type: 'category',
-            label: 'Hardware Installation',
+            label: '硬件安装',
             link: {
                 type: 'generated-index',
-                description: 'Learn how to install new hardware components on your robots.',
+                description: '了解如何为您的机器人安装新的硬件组件。',
             },
             collapsed: false,
             items: [

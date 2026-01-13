@@ -2,20 +2,20 @@
 sidebar_position: 1
 ---
 
-# Welcome to Robot Documentation
+# 欢迎来到机器人项目文档中心
 
-Documentation for our robots - installation guides, diagnostics, and troubleshooting.
+机器人文档中心 - 提供安装指南、诊断与故障排除的相关文档。
 
-## Documentation Sections
+## 文档章节
 
-### 📦 Hardware Installation
+### 📦 硬件安装
 
-Guides for installing new hardware components on your robots.
+机器人硬件组件的安装指南。
 
-### 🔧 Troubleshooting
+### 🔧 故障排除
 
-Diagnose and fix common problems with your robots.
+诊断并修复机器人的常见问题。
 
 ---
 
-*More content coming soon...*
+*更多内容即将推出...*
