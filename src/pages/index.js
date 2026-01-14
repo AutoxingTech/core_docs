@@ -31,14 +31,22 @@ export default function Home() {
                 <div className="container" style={{ padding: '2rem' }}>
                     <div className="row">
                         <div className="col col--4">
-                            <h2>📦 RK3588 Powerbox 控制器</h2>
-                            <p>介绍 RK3588 Powerbox 方案及其优势。</p>
-                            <Link to="/docs/hardware-installation/rk3588-powerbox/">了解更多 →</Link>
+                            <h2>� RK3588 算力平台</h2>
+                            <p style={{ marginBottom: '0.5rem' }}>
+                                <Link to="/docs/hardware-installation/rk3588-powerbox/">• RK3588 Powerbox 方案及其优势</Link>
+                            </p>
+                            <p>
+                                <Link to="/docs/hardware-installation/raspberry-pi-to-powerbox-upgrade/">• 如何从树莓派平台升级到 Powerbox 平台</Link>
+                            </p>
                         </div>
                         <div className="col col--4">
-                            <h2>🛠️ 平台升级</h2>
-                            <p>指导如何从树莓派平台升级到 Powerbox 平台。</p>
-                            <Link to="/docs/hardware-installation/raspberry-pi-to-powerbox-upgrade/">升级指南 →</Link>
+                            <h2>📄 硬件规格书</h2>
+                            <p style={{ marginBottom: '0.5rem' }}>
+                                <Link to="/docs/hardware-specifications/power-box/">• Power Box 规格书</Link>
+                            </p>
+                            <p>
+                                <Link to="/docs/hardware-specifications/bbox-v1/">• BBox-V1 规格书</Link>
+                            </p>
                         </div>
                         <div className="col col--4">
                             <h2>🌐 API 参考</h2>

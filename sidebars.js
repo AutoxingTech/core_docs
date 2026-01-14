@@ -24,10 +24,21 @@ const sidebars = {
             },
             collapsed: false,
             items: [
-                'bbox-v1/index',
-                'power-box/index',
                 'hardware-installation/rk3588-powerbox/index',
                 'hardware-installation/raspberry-pi-to-powerbox-upgrade/index',
+            ],
+        },
+        {
+            type: 'category',
+            label: '硬件规格书',
+            link: {
+                type: 'generated-index',
+                description: 'AX 机器人硬件平台的详细规格说明。',
+            },
+            collapsed: false,
+            items: [
+                'hardware-specifications/power-box/index',
+                'hardware-specifications/bbox-v1/index',
             ],
         },
     ],

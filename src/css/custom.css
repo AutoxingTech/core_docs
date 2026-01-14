@@ -162,3 +162,20 @@
 .markdown th {
     font-size: 0.95rem;
 }
+
+/* Edit This Page & View Markdown Link Styles */
+.edit-this-page-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.edit-this-page-wrapper .theme-edit-this-page {
+    display: inline-flex;
+    align-items: center;
+}
+
+.edit-separator {
+    color: var(--ifm-color-emphasis-400);
+    user-select: none;
+}
