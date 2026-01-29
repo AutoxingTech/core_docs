@@ -39,6 +39,7 @@ const sidebars = {
             items: [
                 'hardware-specifications/power-box/index',
                 'hardware-specifications/bbox-v1/index',
+                'hardware-specifications/wifi-certification/index',
             ],
         },
     ],
