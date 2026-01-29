@@ -24,25 +24,11 @@ This starts a local development server at http://localhost:3000
 npm run build
 ```
 
-### Deploy to GitHub Pages
+### Deployment
 
-1. Update `docusaurus.config.js`:
-   - Replace `<your-github-username>` with your GitHub username
-   - Update `projectName` if your repo name is different
+This project is automatically deployed to GitHub Pages via GitHub Actions when changes are pushed to the `master` branch.
 
-2. Deploy:
-   ```bash
-   # Windows
-   deploy.bat
-   
-   # Linux/Mac
-   ./deploy.sh
-   ```
-
-   Or manually:
-   ```bash
-   GIT_USER=<your-username> npm run deploy
-   ```
+To trigger a manual deployment, you can use the **Actions** tab in the GitHub repository.
 
 ## Project Structure
 
