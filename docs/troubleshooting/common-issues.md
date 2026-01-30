@@ -2,16 +2,10 @@
 sidebar_position: 1
 ---
 
-# Common Issues
+# 故障排查
 
-Diagnose and fix common problems with your robots.
+了解如何诊断和解决常见硬件问题。
 
-## Topics to Cover
+## 可用的故障排查指南
 
-- Diagnostic tools
-- Motor problems
-- Sensor issues
-- Connectivity issues
-- Error codes reference
-
-*Content coming soon...*
+- [电源控制盒故障排查](./power-box/) - 解决电源控制盒相关的问题，包括无法开机、短路保护触发等常见故障
