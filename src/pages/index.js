@@ -44,8 +44,11 @@ export default function Home() {
                             <p style={{ marginBottom: '0.5rem' }}>
                                 <Link to="/docs/hardware-specifications/power-box/">• Power Box 规格书</Link>
                             </p>
-                            <p>
+                            <p style={{ marginBottom: '0.5rem' }}>
                                 <Link to="/docs/hardware-specifications/bbox-v1/">• BBox-V1 规格书</Link>
+                            </p>
+                            <p>
+                                <Link to="/docs/troubleshooting/power-box/">• 电源控制盒故障排查</Link>
                             </p>
                         </div>
                         <div className="col col--4">
