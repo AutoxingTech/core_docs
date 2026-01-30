@@ -5,7 +5,7 @@ sidebar_position: 2
 # 电源控制盒故障排查
 
 :::info 端子位置参考
-在进行故障排查前，建议参考 [**24V 电源控制盒说明书**](../../hardware-specifications/power-box/) 了解各个端子的位置和功能。
+在进行故障排查前，建议参考 [**24V 电源控制盒说明书**](/docs/hardware-specifications/power-box/) 了解各个端子的位置和功能。
 :::
 
 import TOCInline from '@theme/TOCInline';
