@@ -54,5 +54,7 @@ const sidebars = {
                 'troubleshooting/power-box/index',
             ],
         },
+    ],
+};
 
-        module.exports = sidebars;
+module.exports = sidebars;
