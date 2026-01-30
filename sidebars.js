@@ -42,7 +42,17 @@ const sidebars = {
                 'hardware-specifications/wifi-certification/index',
             ],
         },
-    ],
-};
+        {
+            type: 'category',
+            label: '故障排查',
+            link: {
+                type: 'generated-index',
+                description: '诊断和解决常见问题。',
+            },
+            collapsed: false,
+            items: [
+                'troubleshooting/power-box/index',
+            ],
+        },
 
-module.exports = sidebars;
+        module.exports = sidebars;
