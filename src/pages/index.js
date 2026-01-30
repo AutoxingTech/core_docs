@@ -30,8 +30,8 @@ export default function Home() {
             <main>
                 <div className="container" style={{ padding: '2rem' }}>
                     <div className="row">
-                        <div className="col col--4">
-                            <h2>� RK3588 算力平台</h2>
+                        <div className="col col--3">
+                            <h2>🔧 RK3588 算力平台</h2>
                             <p style={{ marginBottom: '0.5rem' }}>
                                 <Link to="/docs/hardware-installation/rk3588-powerbox/">• RK3588 Powerbox 方案及其优势</Link>
                             </p>
@@ -39,7 +39,7 @@ export default function Home() {
                                 <Link to="/docs/hardware-installation/raspberry-pi-to-powerbox-upgrade/">• 如何从树莓派平台升级到 Powerbox 平台</Link>
                             </p>
                         </div>
-                        <div className="col col--4">
+                        <div className="col col--3">
                             <h2>📄 硬件规格书</h2>
                             <p style={{ marginBottom: '0.5rem' }}>
                                 <Link to="/docs/hardware-specifications/power-box/">• Power Box 规格书</Link>
@@ -48,10 +48,16 @@ export default function Home() {
                                 <Link to="/docs/hardware-specifications/bbox-v1/">• BBox-V1 规格书</Link>
                             </p>
                             <p>
+                                <Link to="/docs/hardware-specifications/wifi-certification/">• WiFi 认证</Link>
+                            </p>
+                        </div>
+                        <div className="col col--3">
+                            <h2>🔍 故障排查</h2>
+                            <p>
                                 <Link to="/docs/troubleshooting/power-box/">• 电源控制盒故障排查</Link>
                             </p>
                         </div>
-                        <div className="col col--4">
+                        <div className="col col--3">
                             <h2>🌐 API 参考</h2>
                             <p>浏览我们的 REST API 文档。</p>
                             <Link href="https://autoxingtech.github.io/axbot_rest_book/">Autoxing 机器人 REST API →</Link>
