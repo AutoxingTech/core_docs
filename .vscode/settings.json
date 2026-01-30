@@ -4,6 +4,9 @@
         "build/": true,
         ".docusaurus/": true
     },
+    "search.exclude": {
+        "**/*.png": true
+    },
     "[markdown]": {
         "editor.wordWrap": "off"
     }
