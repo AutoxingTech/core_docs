@@ -23,7 +23,14 @@ sidebar_position: 1
 
 - [树莓派平台到算力盒升级指南](./hardware-installation/raspberry-pi-to-powerbox-upgrade/index.md) - 从老平台升级到新型号的详细说明
 
-### 🔧 故障排除
+### 🔧 设备校准
+
+设备传感器的校准和矫正指南。
+
+- [IMU 矫正指南](./calibration/imu-correction/index.md) - 惯性测量单元的矫正方法
+- [激光雷达校准指南](./calibration/lidar-calibration/index.md) - 激光雷达的校准步骤
+
+### 🩺 故障排除
 
 诊断并修复机器人的常见问题。
 

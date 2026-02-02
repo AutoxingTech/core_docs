@@ -44,6 +44,19 @@ const sidebars = {
         },
         {
             type: 'category',
+            label: '设备校准',
+            link: {
+                type: 'generated-index',
+                description: '设备传感器校准和矫正指南。',
+            },
+            collapsed: false,
+            items: [
+                'calibration/imu-correction/index',
+                'calibration/lidar-calibration/index',
+            ],
+        },
+        {
+            type: 'category',
             label: '故障排查',
             link: {
                 type: 'generated-index',
