@@ -46,6 +46,23 @@
     text-align: center;
 }
 
+/* 多图并列容器 */
+.img-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.img-row p {
+    display: contents;
+}
+
+.img-row .img-container {
+    margin: 0;
+}
+
 /* 小图标缩略图模式 */
 .inline-zoom-wrapper {
     display: inline-block;

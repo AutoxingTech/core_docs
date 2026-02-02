@@ -76,27 +76,51 @@ function InlineImageWithLightbox({ src, caption }) {
     );
 }
 
+const ImageRow = ({ children }) => (
+    <div className="img-row">
+        {children}
+    </div>
+);
+
 export default {
     ...MDXComponents,
+    ImageRow,
     img: (props) => {
         const alt = props.alt || '';
         let caption = alt;
-        let width = props.width || '600';
+        let width = props.width || null;
+        let height = props.height || null;
         let isInline = false;
 
-        // 支持 ![描述|宽度|inline] 语法
+        // 支持 ![描述|宽度|高度|inline] 或 ![描述|宽度|inline] 语法
         if (alt.includes('|')) {
-            const parts = alt.split('|');
+            const parts = alt.split('|').map(p => p.trim());
             caption = parts[0];
-            width = parts[1] || '600';
-            if (parts.length > 2 && parts[2] === 'inline') {
-                isInline = true;
+            if (parts[1]) width = parts[1];
+
+            // 处理后续参数
+            for (let i = 2; i < parts.length; i++) {
+                if (parts[i] === 'inline') {
+                    isInline = true;
+                } else if (parts[i]) {
+                    height = parts[i];
+                }
             }
         }
 
+        // 默认宽度
+        if (!width && !height) width = '600';
+
+        const imgStyle = {
+            cursor: 'zoom-in',
+            width: width && width !== 'auto' ? (isNaN(width) ? width : `${width}px`) : 'auto',
+            height: height && height !== 'auto' ? (isNaN(height) ? height : `${height}px`) : 'auto',
+            ...props.style
+        };
+
         if (isInline) {
             // For small inline images, use custom lightbox
-            if (parseInt(width) <= 32) {
+            if (width && parseInt(width) <= 32) {
                 return <InlineImageWithLightbox src={props.src} caption={caption} />;
             }
             return (
@@ -105,14 +129,11 @@ export default {
                     alt={caption}
                     title={caption}
                     style={{
-                        cursor: 'zoom-in',
-                        width: `${width}px`,
-                        height: 'auto',
+                        ...imgStyle,
                         verticalAlign: 'middle',
                         margin: '0 8px',
                         display: 'inline-block',
                         borderRadius: '4px',
-                        ...props.style
                     }}
                 />
             );
@@ -123,12 +144,7 @@ export default {
                 <img
                     {...props}
                     alt={caption}
-                    style={{
-                        cursor: 'zoom-in',
-                        width: props.width ? `${width}px` : 'auto',
-                        height: 'auto',
-                        ...props.style
-                    }}
+                    style={imgStyle}
                 />
                 {caption && <figcaption>图示：{caption}</figcaption>}
             </figure>
