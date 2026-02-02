@@ -18,11 +18,11 @@ IMU 校准主要包括三个方面的调整：
 
 ## 校准项详解
 
-![校准概览|600](./img/calibration.png)
+![校准概览|400](./img/calibration.png)
 
 ### 1. 陀螺仪安装角校准（Gyro Pose）
 
-![陀螺仪安装角示意图|600](./img/gyro-pose-diagram.png)
+![陀螺仪安装角示意图|300](./img/gyro-pose-diagram.png)
 
 #### 原理
 
@@ -49,9 +49,9 @@ IMU 校准主要包括三个方面的调整：
 
 通过点云观察，机器人原地转一圈的过程中，点云应该没有任何起伏。这表示 XY 平面的角度偏差已被正确校准。
 
-![校准结果示意图1|600](./img/calibration-result-1.png)
-![校准结果示意图2|600](./img/calibration-result-2.png)
-![校准结果示意图3|600](./img/calibration-result-3.png)
+![校准结果示意图1|200](./img/calibration-result-1.png)
+![校准结果示意图2|200](./img/calibration-result-2.png)
+![校准结果示意图3|200](./img/calibration-result-3.png)
 
 ---
 
@@ -70,7 +70,7 @@ IMU 校准主要包括三个方面的调整：
 
 ### 3. 陀螺仪灵敏度校准（Gyro Scale）
 
-![陀螺仪灵敏度校准|600](./img/gyro-scale-calibration.png)
+![陀螺仪灵敏度校准|300](./img/gyro-scale-calibration.png)
 
 #### 原理
 
