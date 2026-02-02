@@ -74,7 +74,9 @@
 
 ## 常用参数列表
 
-以下为截止 2026 年 1 月 1 日开放的主要参数列表。**请注意：** 功能的更新可能会引入新参数或调整现有参数，请务必以机器人实时的 `Schema` 信息为准。
+:::warning 注意
+以下参数列表内容、描述及默认值等，会随软件版本更新或机器人机型（如叉车、顶升机器人、配送机器人等）的不同而有所差异。请务必以机器人实时的 `Schema` 信息为准。
+:::
 
 ### 机器人基础 (Robot)
 
@@ -89,13 +91,13 @@
 | 参数名 | 描述 | 默认值 | 范围/选项 |
 | :--- | :--- | :--- | :--- |
 | `control.auto_hold` | 机器人空闲时是否保持原地静止。 | `true` | - |
-| `control.emergency_stop_button_behavior` | 急停按钮类型（自动弹出、手动释放等）。 | `manual_release_safe` | `bounce_up`, `manual_release`, `manual_release_safe` |
-| `control.estop_wheel_lock` | 急停时是否锁定车轮。 | `auto` | `auto`, `always_lock` |
-| `control.max_forward_velocity` | 最大前进速度。 | `0.8` | `[0, 2.1]` |
-| `control.max_backward_velocity` | 最大后退速度。 | `-0.5` | `[-0.6, 0]` |
-| `control.max_forward_acc` | 最大前进加速度。 | `0.26` | `[0, 0.8]` |
-| `control.max_forward_decel` | 最大减速度（负值）。 | `-2.0` | `[-2.0, 0]` |
-| `control.max_angular_velocity` | 最大角速度。 | `0.78` | `[0, 1.2]` |
+| `control.emergency_stop_button_behavior` | 急停按钮类型（自动弹出、手动释放等）。 | `bounce_up` | `bounce_up`, `manual_release`, `manual_release_safe` |
+| `control.estop_wheel_lock` | 急停时是否锁定车轮. | `auto` | `auto`, `always_lock` |
+| `control.max_forward_velocity` | 最大前进速度（单位：m/s）。 | `0.8` | `[0, 2.0]` |
+| `control.max_backward_velocity` | 最大后退速度（单位：m/s）。 | `-0.5` | `[-0.6, 0]` |
+| `control.max_forward_acc` | 最大前进加速度（单位：m/s²）。 | `0.5` | `[0, 0.8]` |
+| `control.max_forward_decel` | 最大减速度（负值，单位：m/s²）。 | `-2.0` | `[-2.0, 0]` |
+| `control.max_angular_velocity` | 最大角速度（单位：rad/s）。 | `0.6` | `[0, 1.2]` |
 | `control.acc_smoother.smooth_level` | 加速度平滑等级。 | `normal` | `disabled`, `lower`, `normal`, `higher` |
 | `control.backward_movement_behavior` | 后退行为策略。 | `when_necessary` | `when_necessary`, `never`, `as_a_last_resort` |
 
@@ -115,10 +117,10 @@
 
 | 参数名 | 描述 | 默认值 | 选项 |
 | :--- | :--- | :--- | :--- |
-| `navigation.primary_planner` | 使用的主规划器类型。 | `nav_fn` | `nav_fn`, `graph` |
+| `navigation.primary_planner` | 使用的主规划器类型。 | `graph` | `nav_fn`, `graph` |
 | `navigation.graph_planner.avoid_obstacles` | 使用 graph 规划器时，是否允许偏离路径进行动态避障。 | `true` | - |
 | `navigation.track_smoother.smooth_radius` | 转弯平滑半径。`0` 表示禁用平滑。 | `0.45` | `[0.0, 1.0]` |
-| `navigation.do_not_pass_cargo_points` | 是否通过添加虚拟障碍物来禁止穿过货架/托盘位置。 | `true` | - |
+| `navigation.do_not_pass_cargo_points` | 是否通过添加虚拟障碍物来禁止穿过货架/托盘位置。 | `false` | - |
 
 ### 限速策略 (Speed Limits)
 
@@ -126,7 +128,7 @@
 | :--- | :--- | :--- | :--- |
 | `bump_based_speed_limit.enable` | 是否启用基于颠簸的限速。 | `true` | - |
 | `bump_based_speed_limit.bump_tolerance` | 颠簸容忍度。 | `0.5` | `[0, 1.0]` |
-| `weight_based_speed_limit.enable` | 是否启用基于载重的限速。 | `true` | - |
+| `weight_based_speed_limit.enable` | 是否启用基于载重的限速。 | `false` | - |
 | `weight_based_speed_limit.min_linear_velocity` | 载重限速时的最低线速度。 | `0.4` | `[0.4, 0.8]` |
 | `weight_based_speed_limit.min_angular_velocity` | 载重限速时的最低角速度。 | `0.4` | `[0.4, 0.8]` |
 | `position_quality_based_speed_limit.enable` | 基于定位质量的限速（建议仅在有悬崖等极端环境开启）。 | `false` | - |
@@ -137,8 +139,8 @@
 | :--- | :--- | :--- |
 | `forklift.raise_forks_while_moving` | 移动时是否始终抬起货叉。 | `true` |
 | `rack.specs` | 货架物理规格定义。 | 见 Schema |
-| `pallet.specs` | 托盘物理规格定义。 | `[]` |
-| `safety.ignore_objects_under_rack` | 是否忽略货架底部的物体（慎用）。 | `false` |
+| `pallet.specs` | 托盘物理规格定义。 | 见 Schema |
+| `safety.ignore_objects_under_rack` | 是否忽略货架底部的物体（慎用）。 | `true` |
 
 ### 电梯协同 (Elevator)
 
@@ -154,7 +156,7 @@
 | `elevator.cautious_policy.occupied_status_timeout` | 谨慎模式下电梯占用超时。 | `10` | `[1, 300]` |
 | `elevator.no_progress_timeout` | 全局路径无进度超时时间。 | `10` | `[1, 300]` |
 
-### 安全、隐私与算法 (Safety / Privacy / SLAM)
+### 安全、隐私与报警 (Safety / Privacy / Alert)
 
 | 参数名 | 描述 | 默认值 | 选项 |
 | :--- | :--- | :--- | :--- |
@@ -163,3 +165,13 @@
 | `slam.imu.trust_gyroscope` | 是否优先信任陀螺仪进行航向判断（需重载地图）。 | `true` | - |
 | `slam.imu.trust_gyroscope_in_positioning_mode` | 定位模式下是否信任陀螺仪。 | `default` | `default`, `always`, `never` |
 | `alert.progress_stuck.silent_remaining_distance` | 距离终点小于此值时，不触发进度卡住报警（1008）。 | `5.0` | `[0.0, 10000.0]` |
+
+### 传感器配置 (Sensors)
+
+| 参数名 | 描述 | 默认值 |
+| :--- | :--- | :--- |
+| `lidar.lidar_node` | 主激光雷达安装位姿。 | 见 Schema |
+| `lidar.left_lidar_node` | 左侧激光雷达安装位姿。 | 见 Schema |
+| `lidar.right_lidar_node` | 右侧激光雷达安装位姿。 | 见 Schema |
+| `depth_camera.ihawk_downward_node` | 下视深度相机安装位姿。 | 见 Schema |
+| `depth_camera.ihawk_backward_node` | 后视深度相机安装位姿。 | 见 Schema |
