@@ -57,6 +57,18 @@ const sidebars = {
         },
         {
             type: 'category',
+            label: '系统配置',
+            link: {
+                type: 'generated-index',
+                description: '机器人系统参数和配置指南。',
+            },
+            collapsed: false,
+            items: [
+                'system-settings/parameter-system/index',
+            ],
+        },
+        {
+            type: 'category',
             label: '故障排查',
             link: {
                 type: 'generated-index',
