@@ -99,21 +99,54 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        title: '文档',
+                        title: '硬件手册',
                         items: [
                             {
-                                label: '快速入门',
-                                to: '/docs/intro',
+                                label: 'RK3588 Powerbox',
+                                to: '/docs/hardware-installation/rk3588-powerbox/',
                             },
                             {
-                                label: '硬件安装',
-                                to: '/docs/hardware-installation/getting-started',
+                                label: 'Power Box 规格书',
+                                to: '/docs/hardware-specifications/power-box/',
+                            },
+                            {
+                                label: 'BBox-V1 规格书',
+                                to: '/docs/hardware-specifications/bbox-v1/',
+                            },
+                            {
+                                label: 'WiFi 认证',
+                                to: '/docs/hardware-specifications/wifi-certification/',
                             },
                         ],
                     },
                     {
-                        title: '更多',
+                        title: '校准与诊断',
                         items: [
+                            {
+                                label: '雷达标定',
+                                to: '/docs/calibration/lidar-calibration/',
+                            },
+                            {
+                                label: 'IMU 矫正',
+                                to: '/docs/calibration/imu-correction/',
+                            },
+                            {
+                                label: '故障排查',
+                                to: '/docs/troubleshooting/power-box/',
+                            },
+                        ],
+                    },
+                    {
+                        title: '开发者资源',
+                        items: [
+                            {
+                                label: '参数系统',
+                                to: '/docs/system-settings/parameter-system/',
+                            },
+                            {
+                                label: '机器人 REST API',
+                                href: 'https://autoxingtech.github.io/axbot_rest_book/',
+                            },
                             {
                                 label: 'GitHub',
                                 href: 'https://github.com/autoxingtech/core_docs',
