@@ -96,7 +96,10 @@ export default {
         if (alt.includes('|')) {
             const parts = alt.split('|').map(p => p.trim());
             caption = parts[0];
-            if (parts[1]) width = parts[1];
+            if (parts[1]) {
+                width = parts[1];
+                height = 'auto'; // Default to auto if width is specified
+            }
 
             // 处理后续参数
             for (let i = 2; i < parts.length; i++) {
@@ -112,10 +115,10 @@ export default {
         if (!width && !height) width = '600';
 
         const imgStyle = {
+            ...props.style,
             cursor: 'zoom-in',
             width: width && width !== 'auto' ? (isNaN(width) ? width : `${width}px`) : 'auto',
             height: height && height !== 'auto' ? (isNaN(height) ? height : `${height}px`) : 'auto',
-            ...props.style
         };
 
         if (isInline) {
