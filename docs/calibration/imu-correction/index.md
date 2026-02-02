@@ -14,11 +14,11 @@ IMU 校准主要包括三个方面的调整：
 2. **陀螺仪和加速度计零偏校准（Bias Calibration）** - 消除静态偏差
 3. **陀螺仪灵敏度校准（Gyro Scale）** - 校准旋转速度的测量精度
 
+![校准入口|400](./img/calibration.png)
+
 ---
 
 ## 校准项详解
-
-![校准入口|400](./img/calibration.png)
 
 ### 1. 陀螺仪安装角校准（Gyro Pose）
 
