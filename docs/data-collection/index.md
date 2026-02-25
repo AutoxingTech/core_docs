@@ -63,7 +63,7 @@
 | 2026-02-25 11:35:49 | 10004 | recover | Battery is nearly full. | 2.12.12-opi64 |
 | 2026-02-25 11:34:49 | 10004 | error | Charging current is low, charging pile might be malfunctioning;... | 2.12.12-opi64 |
 
-- **Events**：记录重要 API 调用事件（如 `set_map`, `move_to` 等）。
+- **Events**：记录重要 API 调用事件（如 `set_current_map`, `move`, `set_params` 等）。
 
 | Time | Creator | Action | Message |
 | :--- | :--- | :--- | :--- |
@@ -72,7 +72,7 @@
 | 2026-02-25 18:17:47 | py_axbot | move | Created move 79006 none, to [0.794, 0.509] with ori 1.571 |
 | 2026-02-25 18:13:44 | py_axbot | move | Created move 79005 none, to [2.123, 1.44] with ori 1.571 |
 | 2026-02-25 18:13:17 | py_axbot | relocate | Relocate robot to [-102.88, -72.88] with ori = -4.7 |
-| 2026-02-25 18:13:17 | py_axbot | set_current | Set map to 30(转换1层), 681de837472ac49d7b07575b, map_v... |
+| 2026-02-25 18:13:17 | py_axbot | set_current_map | Set map to 30(转换1层), 681de837472ac49d7b07575b, map_v... |
 | 2026-02-25 18:13:12 | py_axbot | move | Created move 79004 none, rotate to ori 4.712 |
 | 2026-02-25 18:12:53 | py_axbot | move | Created move 79003 none, to [-0.012, 2.789] with ori 4.712 |
 | 2026-02-25 18:11:38 | py_axbot | move | Created move 79002 none, to [-0.678, 0.162] with ori 1.571 |
