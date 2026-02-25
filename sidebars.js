@@ -69,6 +69,18 @@ const sidebars = {
         },
         {
             type: 'category',
+            label: '数据管理',
+            link: {
+                type: 'generated-index',
+                description: '了解机器人如何收集、存储及上报数据。',
+            },
+            collapsed: false,
+            items: [
+                'data-collection/index',
+            ],
+        },
+        {
+            type: 'category',
             label: '故障排查',
             link: {
                 type: 'generated-index',
