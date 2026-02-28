@@ -131,6 +131,10 @@ const config = {
                                 to: '/docs/calibration/imu-correction/',
                             },
                             {
+                                label: 'WIFI 快速漫游',
+                                to: '/docs/system-settings/wifi-fast-roaming/',
+                            },
+                            {
                                 label: '故障排查',
                                 to: '/docs/troubleshooting/power-box/',
                             },

@@ -100,6 +100,22 @@ sidebar_position: 1
 
 文件 `sidebars.js` 位于项目根目录。
 
+## 第四步：更新 docusaurus.config.js（可选）
+
+如果新文章需要出现在首页页脚（Footer）的快速链接中，请修改 `docusaurus.config.js`：
+
+1. 找到 `themeConfig.footer.links` 数组。
+2. 在合适的分类 `items` 中添加链接：
+
+```js
+{
+    label: '电机故障排查',
+    to: '/docs/troubleshooting/motor-issue/',
+},
+```
+
+注意：`to` 路径必须以 `/docs/` 开头，并以 `/` 结尾。
+
 ## 完整示例
 
 新增一篇故障排查文章 `docs/troubleshooting/motor-issue/index.md`：
