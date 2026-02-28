@@ -66,6 +66,7 @@ const sidebars = {
             items: [
                 'system-settings/parameter-system/index',
                 'system-settings/wifi-fast-roaming/index',
+                'system-settings/wifi-antenna-installation/index',
             ],
         },
         {

@@ -103,3 +103,7 @@ sudo journalctl -u wpa_supplicant -f | grep -E "BSS|neighbor|roam|WNM"
 :::tip
 调试完成后，建议将其调回 **INFO** 级别以减少磁盘消耗：`sudo wpa_cli log_level INFO`。
 :::
+
+## 下一步
+
+快速漫游的效果也受天线安装质量的影响。请参阅 [WIFI 天线安装规范](../wifi-antenna-installation/index.md)，确保天线位置和布线符合最佳实践。
