@@ -1,7 +1,7 @@
 ---
 name: add-new-article
 description: 在这个 Docusaurus 文档站点中创建新文章。当用户需要新增一篇文档、添加一个新的文章页面，或询问如何在 docs/ 目录中创建新内容时，使用此技能。
-argument-hint: [文章标题] [所属分类]
+argument-hint: '[文章标题] [所属分类]'
 ---
 
 # 新增文章指南
