@@ -1,7 +1,7 @@
 ---
 name: add-new-skill
 description: 在这个项目中创建新的 Copilot Agent Skill。当用户需要新增一个技能、添加一个新的 SKILL.md 文件，或询问如何扩展 Copilot 能力时，使用此技能。
-argument-hint: [技能名称] [技能描述]
+argument-hint: '[技能名称] [技能描述]'
 ---
 
 # 新增 Copilot Skill 指南
@@ -37,13 +37,13 @@ argument-hint: [参数提示]
 
 字段说明：
 
-| 字段 | 必填 | 说明 |
-|------|------|------|
-| `name` | ✅ | 唯一标识符，只能用小写字母和连字符，**必须与父目录名相同**，最长 64 字符 |
-| `description` | ✅ | 描述技能的能力和适用场景，Copilot 依靠此字段判断何时自动加载，最长 1024 字符 |
-| `argument-hint` | 可选 | 在聊天输入框中显示的参数提示文字 |
-| `user-invokable` | 可选 | 默认 `true`，设为 `false` 则隐藏于 `/` 菜单，但 Copilot 仍可自动加载 |
-| `disable-model-invocation` | 可选 | 默认 `false`，设为 `true` 则只能通过 `/` 命令手动调用 |
+| 字段                       | 必填 | 说明                                                                         |
+| -------------------------- | ---- | ---------------------------------------------------------------------------- |
+| `name`                     | ✅   | 唯一标识符，只能用小写字母和连字符，**必须与父目录名相同**，最长 64 字符     |
+| `description`              | ✅   | 描述技能的能力和适用场景，Copilot 依靠此字段判断何时自动加载，最长 1024 字符 |
+| `argument-hint`            | 可选 | 在聊天输入框中显示的参数提示文字                                             |
+| `user-invokable`           | 可选 | 默认 `true`，设为 `false` 则隐藏于 `/` 菜单，但 Copilot 仍可自动加载         |
+| `disable-model-invocation` | 可选 | 默认 `false`，设为 `true` 则只能通过 `/` 命令手动调用                        |
 
 ### 技能正文（必填）
 
@@ -63,12 +63,14 @@ VS Code 会自动发现 `.github/skills/` 目录下的所有 skill，**无需手
 新增一个帮助调试 Docusaurus 构建问题的 skill：
 
 1. 创建目录和文件：
+
    ```
    .github/skills/debug-build/
    └── SKILL.md
    ```
 
 2. `SKILL.md` 内容：
+
    ```markdown
    ---
    name: debug-build
@@ -79,6 +81,7 @@ VS Code 会自动发现 `.github/skills/` 目录下的所有 skill，**无需手
    # 调试 Docusaurus 构建问题
 
    ## 常见原因
+
    ...
    ```
 
