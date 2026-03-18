@@ -1,6 +1,6 @@
 # BBox 产品说明书
 
-![BBox Overview|600](./img/bbox-v1-overview.jpeg)
+![BBox 侧视图|600](./img/bbox-v1-side-view.png)
 
 ## 功能简介
 
@@ -48,21 +48,14 @@
 
 ### 侧面接口
 
-![Side View|600](./img/bbox-v1-side.png)
-
 - **音频输出:** 4 pin 立体声功放。可以直接驱动 8-16 欧姆，10W x 2 的音箱。
 - **引脚定义:** Audio (L-, L+, R-, R+)
 
 ### 背面接口
 
-![Back View|600](./img/bbox-v1-back.png)
+![一代背面|600](./img/bbox-v1-rear.png)
 
-背面接口包含：
-- IO (10 pin)
-- USB 2.0 x 2
-- HDMI Input x 1
-- HDMI Output x 2
-- 2 x PCIe 2.5G 以太网口 (RTL8125BG)
+![二代背面|600](./img/bbox-v2-rear.png)
 
 ## 适配设备
 
