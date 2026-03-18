@@ -84,26 +84,27 @@ IMU 校准主要包括三个方面的调整：
 
 消除陀螺仪灵敏度的系统误差，使旋转测量更加精确。
 
-#### 校准时机
-
-**可以在装机前进行**，因为陀螺仪的特性在长期内保持相对稳定。
-
 #### 校准步骤
 
-1. 启动校准程序
-2. 机器人原地旋转 10 圈（3600°）
-3. 系统以激光测距为真值，计算机器人实际转过的角度
-4. 对比 Gyro 读数与实际角度，计算灵敏度误差
-5. 保存校准参数
+1. **寻找合适环境** 大量点云必须照射到垂直物体（比如墙）。不要有大量斜坡、土堆等。也不能太空旷，没有什么激光参照物。
+
+![垂直墙体特征|600](./img/lidar-features.png)
+
+2. **建图** 点击建图，控制机器人转一圈。创建出一张清晰的地图。不能有多层墙、虚影模糊。点击结束建图->保存。
+
+![原地转圈建图|600](./img/mapping-rotation.png)
+
+3. 打开: 校准程序 -> 选择"校准陀螺仪" -> 开始标定
+4. 机器会人原地旋转 10 圈（3600°），完成校准。
+5. Action Log 里会显示校准是否成功。
 
 #### 成功标志
 
 监控平台 Action Log 里，会有提示：
 
 ```
-26/02/02 17:56:56  Someone  calibrate_gyro_scale   Start gyroscope scale calibration
 26/02/02 17:57:39  Someone  calibrate_gyro_scale   Gyroscope scale applied, from 1.0044360160827637 to 1.0046961650109292
+26/02/02 17:56:56  Someone  calibrate_gyro_scale   Start gyroscope scale calibration
 ```
 
-![校准日志示例|600](./img/calibration-log-example.png)
 
