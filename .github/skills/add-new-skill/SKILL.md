@@ -1,88 +1,88 @@
 ---
 name: add-new-skill
-description: 在这个项目中创建新的 Copilot Agent Skill。当用户需要新增一个技能、添加一个新的 SKILL.md 文件，或询问如何扩展 Copilot 能力时，使用此技能。
-argument-hint: '[技能名称] [技能描述]'
+description: Create a new Copilot Agent Skill in this project. Use this skill when the user wants to add a new skill, create a new SKILL.md file, or asks how to extend Copilot's capabilities.
+argument-hint: '[skill-name] [skill-description]'
 ---
 
-# 新增 Copilot Skill 指南
+# Adding a New Copilot Skill
 
-在开始之前，**务必先阅读官方文档**，了解 Agent Skills 的完整规范和最新特性：
+Before starting, **read the official docs** to understand the full Agent Skills specification:
 
 📖 https://code.visualstudio.com/docs/copilot/customization/agent-skills
 
-## 目录结构规则
+## Directory Structure
 
-所有 skill 存放在 `.github/skills/` 目录下，每个 skill 对应一个独立子目录，目录名即为 skill 的唯一标识符：
+All skills live under `.github/skills/`, each in its own subdirectory. The directory name is the skill's unique identifier:
 
 ```text
 .github/skills/
-└── <skill-name>/          # 目录名必须与 SKILL.md 中的 name 字段完全一致
-    ├── SKILL.md           # 必填：技能定义文件
-    └── （可选附加资源）    # 脚本、示例文件、参考文档等
+└── <skill-name>/       # Must match the 'name' field in SKILL.md exactly
+    ├── SKILL.md        # Required: skill definition file
+    └── (optional)      # Scripts, example files, reference docs, etc.
 ```
 
-## 第一步：创建 SKILL.md
+## Step 1: Create SKILL.md
 
-在 `.github/skills/<skill-name>/` 下创建 `SKILL.md`，文件由两部分组成：
+Create `SKILL.md` under `.github/skills/<skill-name>/`. The file has two parts:
 
-### YAML frontmatter（必填）
+### YAML frontmatter (required)
 
 ```markdown
 ---
 name: skill-name
-description: 技能的描述，说清楚它能做什么、什么时候该用它。
-argument-hint: [参数提示]
+description: Describe what the skill does and when to use it.
+argument-hint: [argument hint]
 ---
 ```
 
-字段说明：
+Field reference:
 
-| 字段                       | 必填 | 说明                                                                         |
-| -------------------------- | ---- | ---------------------------------------------------------------------------- |
-| `name`                     | ✅   | 唯一标识符，只能用小写字母和连字符，**必须与父目录名相同**，最长 64 字符     |
-| `description`              | ✅   | 描述技能的能力和适用场景，Copilot 依靠此字段判断何时自动加载，最长 1024 字符 |
-| `argument-hint`            | 可选 | 在聊天输入框中显示的参数提示文字                                             |
-| `user-invokable`           | 可选 | 默认 `true`，设为 `false` 则隐藏于 `/` 菜单，但 Copilot 仍可自动加载         |
-| `disable-model-invocation` | 可选 | 默认 `false`，设为 `true` 则只能通过 `/` 命令手动调用                        |
+| Field                      | Required | Description                                                                                                   |
+| -------------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| `name`                     | ✅       | Unique identifier, lowercase letters and hyphens only, **must match the parent directory name**, max 64 chars |
+| `description`              | ✅       | Describes the skill's capabilities and when Copilot should load it automatically, max 1024 chars              |
+| `argument-hint`            | optional | Hint text shown in the chat input box                                                                         |
+| `user-invokable`           | optional | Default `true`. Set to `false` to hide from `/` menu while still allowing auto-loading                        |
+| `disable-model-invocation` | optional | Default `false`. Set to `true` to allow only manual invocation via `/` command                                |
 
-### 技能正文（必填）
+### Skill body (required)
 
-正文用 Markdown 编写，内容应包括：
+Write the body in Markdown. It should include:
 
-- 技能的目标和适用场景
-- 清晰的分步操作流程
-- 输入/输出示例
-- 对附加资源文件的引用（使用相对路径，如 `[脚本](./script.sh)`）
+- The skill's goal and applicable scenarios
+- Clear step-by-step instructions
+- Input/output examples
+- References to additional resource files (use relative paths, e.g. `[script](./script.sh)`)
 
-## 第二步：完成
+## Step 2: Done
 
-VS Code 会自动发现 `.github/skills/` 目录下的所有 skill，**无需手动注册**。只要目录名与 `name` 字段一致，重新打开聊天窗口后即可通过 `/skill-name` 调用。
+VS Code auto-discovers all skills under `.github/skills/` — **no manual registration needed**. As long as the directory name matches the `name` field, the skill is available via `/skill-name` after reopening the chat.
 
-## 完整示例
+## Full Example
 
-新增一个帮助调试 Docusaurus 构建问题的 skill：
+Adding a skill to help debug Docusaurus build issues:
 
-1. 创建目录和文件：
+1. Create the directory and file:
 
    ```
    .github/skills/debug-build/
    └── SKILL.md
    ```
 
-2. `SKILL.md` 内容：
+2. `SKILL.md` content:
 
    ```markdown
    ---
    name: debug-build
-   description: 诊断和修复 Docusaurus 构建错误。当用户遇到 npm run build 报错或页面渲染异常时使用。
-   argument-hint: [错误信息]
+   description: Diagnose and fix Docusaurus build errors. Use when the user encounters npm run build failures or page rendering issues.
+   argument-hint: [error message]
    ---
 
-   # 调试 Docusaurus 构建问题
+   # Debugging Docusaurus Build Issues
 
-   ## 常见原因
+   ## Common Causes
 
    ...
    ```
 
-3. 重新打开聊天窗口，输入 `/debug-build` 即可调用。
+3. Type `/debug-build` in the chat to invoke it.
