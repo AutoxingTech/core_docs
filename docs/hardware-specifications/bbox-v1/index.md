@@ -1,6 +1,6 @@
 # BBox 产品说明书
 
-![BBox Overview|600](./img/image_1_1.jpeg)
+![BBox Overview|600](./img/bbox-v1-overview.jpeg)
 
 ## 功能简介
 
@@ -38,32 +38,24 @@
 
 ### 正面接口
 
-![算力盒正面|600](./img/bbox-2-front.png)
-
-正面接口包含：
-- USB 2.0 x 4
-- UART x 4 (U7, U1, U6, U4)
-- CAN x 2 (CAN0, CAN1)
-- 天线接口 (WIFI/4G/GNSS/ESP-NOW)
-- SIM 卡槽
-- 电源接口 (24V)
+![算力盒正面|600](./img/bbox-v2-front.png)
 
 **具体引脚定义 (从左到右):**
 - **UART:** GND, RX, TX, 5V
 - **CAN:** GND, L, H, 空/模拟输入
 
-\* CAN 后期版本，CAN 口的最右边，可以接碰撞条
+\* 早期版本，CAN口最右边为空。后期版本，CAN 口的最右边是输入，可以接碰撞条。
 
 ### 侧面接口
 
-![Side View|600](./img/image_2_2.png)
+![Side View|600](./img/bbox-v1-side.png)
 
 - **音频输出:** 4 pin 立体声功放。可以直接驱动 8-16 欧姆，10W x 2 的音箱。
 - **引脚定义:** Audio (L-, L+, R-, R+)
 
 ### 背面接口
 
-![Back View|600](./img/image_3_1.png)
+![Back View|600](./img/bbox-v1-back.png)
 
 背面接口包含：
 - IO (10 pin)
