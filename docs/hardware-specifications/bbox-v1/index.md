@@ -1,4 +1,4 @@
-# BBox 一代产品说明书
+# BBox 产品说明书
 
 ![BBox Overview|600](./img/image_1_1.jpeg)
 
@@ -11,7 +11,7 @@
 | 类别 | 详细参数 |
 | :--- | :--- |
 | **CPU** | 8 核 64 位处理器 (4 个 Cortex-A76 和 4 个 Cortex-A55 及独立的 NEON 协处理器)<br/>Cortex-A76 主频最高 2.4GHz，Cortex-A55 主频最高 1.8GHz |
-| **内存** | 8G |
+| **内存** | 4G/8G/16G |
 | **eMMC** | 64G |
 | **4G模块** | 内置移远EG25 |
 | **GNSS** | GPS/BeiDou |
@@ -38,6 +38,8 @@
 
 ### 正面接口
 
+**1代**
+
 ![Front View|600](./img/image_2_1.png)
 
 正面接口包含：
@@ -53,6 +55,10 @@
 - **CAN0/CAN1:** GND, L, H, 5V
 - **NMEA / 4G / SIM**
 - **WIFI (aux/main) / ESP-NOW**
+
+**2代**
+
+![2代算力盒正面|600](./img/bbox-2-front.png)
 
 ### 侧面接口
 
