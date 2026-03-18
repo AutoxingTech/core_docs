@@ -110,7 +110,7 @@ const config = {
                                 to: '/docs/hardware-specifications/power-box/',
                             },
                             {
-                                label: 'BBox-V1 规格书',
+                                label: 'BBox 规格书',
                                 to: '/docs/hardware-specifications/bbox-v1/',
                             },
                             {

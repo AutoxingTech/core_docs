@@ -38,9 +38,7 @@
 
 ### 正面接口
 
-**1代**
-
-![Front View|600](./img/image_2_1.png)
+![算力盒正面|600](./img/bbox-2-front.png)
 
 正面接口包含：
 - USB 2.0 x 4
@@ -51,14 +49,10 @@
 - 电源接口 (24V)
 
 **具体引脚定义 (从左到右):**
-- **U7/U1/U6/U4 (UART):** GND, RX, TX, 5V
-- **CAN0/CAN1:** GND, L, H, 5V
-- **NMEA / 4G / SIM**
-- **WIFI (aux/main) / ESP-NOW**
+- **UART:** GND, RX, TX, 5V
+- **CAN:** GND, L, H, 空/模拟输入
 
-**2代**
-
-![2代算力盒正面|600](./img/bbox-2-front.png)
+\* CAN 后期版本，CAN 口的最右边，可以接碰撞条
 
 ### 侧面接口
 
