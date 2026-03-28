@@ -53,7 +53,7 @@ sidebar_position: 3
 
 ### 算力盒配套线材
 
-*   蓝海 25D 激光雷达线 ![点击查看详情|24|inline](./img/lidar-cable.png)
+*   蓝海 50CR 激光雷达线 ![点击查看详情|24|inline](./img/lidar-cable.png)
 *   顶升串口线 ![点击查看详情|24|inline](./img/lift-serial-cable.png)
 *   轮子信号线 ![点击查看详情|24|inline](./img/wheel-signal-cable.png)
 *   USB Type-A 转 Type-C 线 ![点击查看详情|24|inline](./img/usb-atoc-cable.png)
