@@ -71,14 +71,13 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: '数据管理',
+            label: '建图技巧',
             link: {
                 type: 'generated-index',
-                description: '了解机器人如何收集、存储及上报数据。',
+                description: '了解在不同场景下的建图技巧。',
             },
             collapsed: false,
             items: [
-                'data-collection/index',
                 'data-collection/tips-for-mapping-large-area/index',
                 'data-collection/piece-by-piece-mapping/index',
             ],
@@ -93,6 +92,18 @@ const sidebars = {
             collapsed: false,
             items: [
                 'troubleshooting/power-box/index',
+            ],
+        },
+        {
+            type: 'category',
+            label: '数据管理与隐私',
+            link: {
+                type: 'generated-index',
+                description: '了解机器人关于用户隐私和数据采集的说明。',
+            },
+            collapsed: false,
+            items: [
+                'data-collection/index',
             ],
         },
     ],

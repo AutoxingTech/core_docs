@@ -7,8 +7,8 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: '机器人项目文档中心',
-    tagline: '安装、诊断与故障排除指南',
+    title: '景行慧动机器人文档中心',
+    tagline: '硬软件安装、系统配置与故障排除指南',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -71,9 +71,9 @@ const config = {
             // Replace with your project's social card
             image: 'img/robot-social-card.jpg',
             navbar: {
-                title: '机器人项目文档',
+                title: '景行慧动机器人文档',
                 logo: {
-                    alt: '机器人项目文档 Logo',
+                    alt: '景行慧动机器人 Logo',
                     src: 'img/logo.svg',
                 },
                 items: [
@@ -99,44 +99,36 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        title: '硬件手册',
+                        title: '文档与规格',
                         items: [
                             {
-                                label: 'RK3588 Powerbox',
-                                to: '/docs/hardware-installation/rk3588-powerbox/',
+                                label: '项目快速了解',
+                                to: '/docs/intro',
                             },
                             {
-                                label: 'Power Box 规格书',
+                                label: 'Power Box 硬件说明书',
                                 to: '/docs/hardware-specifications/power-box/',
                             },
                             {
-                                label: 'BBox 规格书',
+                                label: 'BBox 硬件说明书',
                                 to: '/docs/hardware-specifications/bbox-v1/',
                             },
                             {
-                                label: 'WiFi 认证',
+                                label: 'WiFi 认证说明',
                                 to: '/docs/hardware-specifications/wifi-certification/',
                             },
                         ],
                     },
                     {
-                        title: '校准与诊断',
+                        title: '支持与帮助',
                         items: [
                             {
-                                label: '雷达标定',
-                                to: '/docs/calibration/lidar-calibration/',
-                            },
-                            {
-                                label: 'IMU 矫正',
-                                to: '/docs/calibration/imu-correction/',
-                            },
-                            {
-                                label: 'WIFI 快速漫游',
-                                to: '/docs/system-settings/wifi-fast-roaming/',
-                            },
-                            {
-                                label: '故障排查',
+                                label: '电源盒故障排查',
                                 to: '/docs/troubleshooting/power-box/',
+                            },
+                            {
+                                label: '数据管理与隐私声明',
+                                to: '/docs/data-collection/',
                             },
                         ],
                     },
@@ -144,21 +136,17 @@ const config = {
                         title: '开发者资源',
                         items: [
                             {
-                                label: '参数系统',
-                                to: '/docs/system-settings/parameter-system/',
-                            },
-                            {
                                 label: '机器人 REST API',
                                 href: 'https://autoxingtech.github.io/axbot_rest_book/',
                             },
                             {
-                                label: 'GitHub',
+                                label: 'GitHub 源码仓库',
                                 href: 'https://github.com/autoxingtech/core_docs',
                             },
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} 机器人项目文档中心. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} 景行慧动机器人. Built with Docusaurus.`,
             },
             prism: {
                 theme: lightCodeTheme,
