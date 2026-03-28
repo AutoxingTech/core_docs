@@ -80,6 +80,7 @@ const sidebars = {
             items: [
                 'data-collection/index',
                 'data-collection/tips-for-mapping-large-area/index',
+                'data-collection/piece-by-piece-mapping/index',
             ],
         },
         {
