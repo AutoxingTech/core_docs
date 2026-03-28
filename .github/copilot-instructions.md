@@ -57,6 +57,8 @@ If you need complex HTML, you can still use the `<figure>` tag, but ensure the `
 ## 6. Markdown Formatting Rules
 
 - **Blank Lines**: Always leave a blank line after headers (`#`, `##`, `###`, etc.) before the start of the next content (paragraphs, lists, images, etc.).
+- **Notes/Remarks (Admonitions)**: Always use Docusaurus admonitions (e.g., `:::note`, `:::warning`) for notes, tips, and warnings instead of plain text prefixes like "**提示**：".
+- **Short Line Length (Diff-Friendly)**: Break long paragraphs into shorter lines (e.g., wrap lines at punctuation). Avoid excessively long single lines. This makes side-by-side diffing and future review of file changes much easier.
 
 ## 7. Environment Requirements
 
