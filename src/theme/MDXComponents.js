@@ -149,7 +149,7 @@ export default {
                     alt={caption}
                     style={imgStyle}
                 />
-                {caption && <figcaption>图示：{caption}</figcaption>}
+                {caption && <figcaption>{caption}</figcaption>}
             </figure>
         );
     },

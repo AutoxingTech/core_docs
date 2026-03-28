@@ -62,3 +62,18 @@ If you need complex HTML, you can still use the `<figure>` tag, but ensure the `
 
 - Ensure `docusaurus-plugin-image-zoom` is installed and configured in `docusaurus.config.js`.
 - Always use relative paths (`./img/...`) for images within folder-based documents.
+
+## 8. Video Embedding Rules
+
+- **Use Require Syntax**: When embedding local videos in Markdown/MDX using the `<video>` tag, you MUST use `require()` for the `src` attribute so Webpack processes the asset correctly.
+- **Incorrect**: `<source src="./img/video.mp4" type="video/mp4" />`
+- **Correct**: `<source src={require('./img/video.mp4').default} type="video/mp4" />`
+
+Example:
+
+```jsx
+<video width="100%" controls>
+  <source src={require('./img/video-name.mp4').default} type="video/mp4" />
+  浏览器不支持视频标签。
+</video>
+```

@@ -79,6 +79,7 @@ const sidebars = {
             collapsed: false,
             items: [
                 'data-collection/index',
+                'data-collection/tips-for-mapping-large-area/index',
             ],
         },
         {
