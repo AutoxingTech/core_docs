@@ -1,6 +1,6 @@
 # 48V 电源控制盒说明书
 
-![48V 电源控制盒|600](./img/power-box-48v.png)
+![48V 电源控制盒|600](./img/power-box-48v.webp)
 
 ## 规格
 

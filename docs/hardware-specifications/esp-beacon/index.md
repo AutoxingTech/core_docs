@@ -1,6 +1,6 @@
 # ESP 门控呼叫器产品说明书
 
-![ESP 门控呼叫器外观、正面接口与顶部按键|700](./img/esp-beacon-front.png)
+![ESP 门控呼叫器外观、正面接口与顶部按键|700](./img/esp-beacon-front.webp)
 
 ## 功能简介
 
@@ -51,7 +51,7 @@ ESP 门控呼叫器用于机器人与自动门之间的无线联动。
 
 ### 背面电源接口
 
-![ESP 门控呼叫器背面交流电源接口|700](./img/esp-beacon-power-input.png)
+![ESP 门控呼叫器背面交流电源接口|700](./img/esp-beacon-power-input.webp)
 
 背面两针电源接口用于接入 110～220V 交流电。
 
