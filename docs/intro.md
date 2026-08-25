@@ -15,7 +15,7 @@ sidebar_position: 1
 - [BBox 产品说明书](./hardware-specifications/bbox-v1/index.md) - 导航盒子详细规格、接口定义和适配设备
 - [24V 电源控制盒说明书](./hardware-specifications/power-box/index.md) - 电源管理设备的规格、接线端子和控制按钮说明
 - [48V 电源控制盒说明书](./hardware-specifications/power-box-48v/index.md) - 48V 电源平台的规格、接线端子和蜂鸣器提示说明
-- [ESP 门控呼叫器产品说明书](./hardware-specifications/esp-beacon/index.md) - 门控接口、音量按键和 Wi-Fi 配置页面说明
+- [ESP Now 门控通知器产品说明书](./hardware-specifications/esp-beacon/index.md) - 门控接口、音量按键和 Wi-Fi 配置页面说明
 - [RK3588 算力盒 + 电源盒方案优势介绍](./hardware-installation/rk3588-powerbox/index.md) - 新平台与老平台的功能对比
 - [WIFI 认证说明](./hardware-specifications/wifi-certification/index.md) - 机器人 WIFI 模块构成及认证相关说明
 

@@ -37,7 +37,9 @@ export default function Home() {
                                 <li><Link to="/docs/hardware-installation/rk3588-powerbox/">• RK3588 Powerbox 方案</Link></li>
                                 <li><Link to="/docs/hardware-installation/raspberry-pi-to-powerbox-upgrade/">• 树莓派升级为 Powerbox</Link></li>
                                 <li><Link to="/docs/hardware-specifications/power-box/">• Power Box 硬件规格书</Link></li>
+                                <li><Link to="/docs/hardware-specifications/power-box-48v/">• 48V 电源控制盒规格书</Link></li>
                                 <li><Link to="/docs/hardware-specifications/bbox-v1/">• BBox 硬件规格书</Link></li>
+                                <li><Link to="/docs/hardware-specifications/esp-beacon/">• ESP Now 门控通知器规格书</Link></li>
                             </ul>
                         </div>
                         <div className="col col--4">
