@@ -38,7 +38,7 @@ const sidebars = {
             collapsed: false,
             items: [
                 'hardware-specifications/power-box/index',
-                'hardware-specifications/power-box-75v/index',
+                'hardware-specifications/power-box-48v/index',
                 'hardware-specifications/bbox-v1/index',
                 'hardware-specifications/wifi-certification/index',
             ],
