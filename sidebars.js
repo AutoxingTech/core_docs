@@ -40,6 +40,7 @@ const sidebars = {
                 'hardware-specifications/power-box/index',
                 'hardware-specifications/power-box-48v/index',
                 'hardware-specifications/esp-beacon/index',
+                'hardware-specifications/hc32f420-imu/index',
                 'hardware-specifications/bbox-v1/index',
                 'hardware-specifications/wifi-certification/index',
             ],
