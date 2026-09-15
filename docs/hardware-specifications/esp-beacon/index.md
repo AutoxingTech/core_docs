@@ -66,7 +66,7 @@ ESP Now 门控通知器一物两用，可作为自动门控制器（简称门控
 
 ## Wi-Fi 配置页面
 
-![ESP 门控呼叫器Wi-Fi配置页面|700](./img/esp-beacon-power-WiFi.png)
+![ESP 门控呼叫器Wi-Fi配置页面|700](./img/esp-beacon-WiFi.png)
 
 ### 连接设备热点
 
