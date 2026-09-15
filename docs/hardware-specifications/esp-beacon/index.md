@@ -118,7 +118,7 @@ ESP Now 门控通知器一物两用，可作为自动门控制器（简称门控
 | **Restart** | 重启门控通知器。 |
 | **Firmware Update (OTA)** | 进入无线固件升级页面。 |
 
-![ESP 门控呼叫器OTA页面|700](./img/esp-beacon-power-OTA.png)
+![ESP 门控呼叫器OTA页面|700](./img/esp-beacon-OTA.png)
 
 OTA 页面也可直接通过 `http://192.168.4.1/update` 访问。
 默认登录账号为 `autoxing`，密码为 `123456`。
