@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 800 900" role="img" aria-labelledby="title description">
+  <title id="title">Four-position connector pinout</title>
+  <desc id="description">Colored flat front view based on the supplied photograph, with green textured plastic, orange release tabs and black, blue, yellow and red ferrule sleeves. Surface grain and straightened wires are illustrative, not a photographic reproduction. From left to right: GND, TX, RX, 5V. Pin assignments are supplied by the user, not inferred from wire colors.</desc>
+  <defs>
+    <linearGradient id="plastic" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#477744"/>
+      <stop offset="0.16" stop-color="#82b86b"/>
+      <stop offset="0.65" stop-color="#649c54"/>
+      <stop offset="1" stop-color="#93c67b"/>
+    </linearGradient>
+    <linearGradient id="groove" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#97c47e"/>
+      <stop offset="0.22" stop-color="#477d42"/>
+      <stop offset="0.7" stop-color="#558e48"/>
+      <stop offset="1" stop-color="#a0cc85"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" stop-color="#f5b249"/>
+      <stop offset="1" stop-color="#d77820"/>
+    </linearGradient>
+    <linearGradient id="sleeve" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#000" stop-opacity="0.38"/>
+      <stop offset="0.35" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="0.65" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.3"/>
+    </linearGradient>
+    <pattern id="grain" width="9" height="11" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r="0.65" fill="#fff" opacity="0.19"/>
+      <circle cx="7" cy="8" r="0.7" fill="#183b1a" opacity="0.16"/>
+      <path d="M5 1 l1 1 M1 8 l1 1" stroke="#fff" stroke-width="0.5" opacity="0.15"/>
+    </pattern>
+    <path id="sleeve-shape" d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z"/>
+    <path id="wire-shape" d="M-9 624 V770 Q0 779 9 770 V624 Z"/>
+    <style>
+      .housing { fill: url(#plastic); stroke: #3e6d36; }
+      .recess { fill: url(#groove); stroke: #48743b; }
+      .hole { fill: #203c27; stroke: #a0c788; }
+    </style>
+  </defs>
+  <rect width="800" height="900" fill="white"/>
+  <g stroke="#3e6d36" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="url(#plastic)">
+    <path d="M218 218 V105 Q218 100 224 100 H576 Q582 100 582 105 V218"/>
+    <path d="M226 218 V112 H574 V218"/>
+    <path d="M237 112 V169 H263 V112 M337 112 V169 H363 V112 M437 112 V169 H463 V112 M537 112 V169 H563 V112"/>
+    <path d="M242 112 V160 H258 V112 M342 112 V160 H358 V112 M442 112 V160 H458 V112 M542 112 V160 H558 V112" stroke-width="1.6"/>
+    <path d="M205 215 H595 V481 L586 499 H214 L205 481 Z"/>
+    <path d="M216 226 H584 V477 H216 Z" stroke-width="1.6"/>
+    <rect class="hole" x="234" y="251" width="32" height="30" rx="4"/>
+    <rect class="hole" x="334" y="251" width="32" height="30" rx="4"/>
+    <rect class="hole" x="434" y="251" width="32" height="30" rx="4"/>
+    <rect class="hole" x="534" y="251" width="32" height="30" rx="4"/>
+    <path class="recess" d="M223 464 V317 L234 308 H266 L277 317 V464 Z"/>
+    <path class="recess" d="M323 464 V317 L334 308 H366 L377 317 V464 Z"/>
+    <path class="recess" d="M423 464 V317 L434 308 H466 L477 317 V464 Z"/>
+    <path class="recess" d="M523 464 V317 L534 308 H566 L577 317 V464 Z"/>
+    <path d="M234 322 V453 M266 322 V453 M334 322 V453 M366 322 V453 M434 322 V453 M466 322 V453 M534 322 V453 M566 322 V453" stroke-width="1.5"/>
+    <path d="M214 499 V542 H586 V499 M214 507 H586"/>
+    <path fill="url(#orange)" stroke="#976528" d="M227 507 V532 H273 V507 Z M327 507 V532 H373 V507 Z M427 507 V532 H473 V507 Z M527 507 V532 H573 V507 Z"/>
+    <path fill="url(#grain)" stroke="none" d="M218 100 H582 V215 H595 V481 L586 499 H214 L205 481 V215 H218 Z"/>
+  </g>
+  <g stroke-width="2" stroke-linejoin="round">
+    <g transform="translate(250 0)" stroke="#242728">
+      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#353637"/>
+      <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#252a2b"/>
+    </g>
+    <g transform="translate(350 0)" stroke="#245772">
+      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#126a9e"/>
+      <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#126a9e"/>
+    </g>
+    <g transform="translate(450 0)" stroke="#b4921b">
+      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#eed62d"/>
+      <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#edc52d"/>
+    </g>
+    <g transform="translate(550 0)" stroke="#a7352e">
+      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#df4b38"/>
+      <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#e64e4e"/>
+    </g>
+    <path d="M232 602 H268 M332 602 H368 M432 602 H468 M532 602 H568" stroke="#fff" stroke-opacity="0.3" fill="none"/>
+  </g>
+  <g fill="#202020" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" text-anchor="middle">
+    <text x="250" y="832">GND</text>
+    <text x="350" y="832">TX</text>
+    <text x="450" y="832">RX</text>
+    <text x="550" y="832">5V</text>
+  </g>
+</svg>
