@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 800 900" role="img" aria-labelledby="title description">
   <title id="title">Four-position connector pinout</title>
-  <desc id="description">Colored flat front view based on the supplied photograph, with green textured plastic, orange release tabs and black, blue, yellow and red ferrule sleeves. Surface grain and straightened wires are illustrative, not a photographic reproduction. From left to right: GND, TX, RX, 5V. Pin assignments are supplied by the user, not inferred from wire colors.</desc>
+  <desc id="description">Colored flat front view based on the supplied photograph, with green textured plastic, orange release tabs and black, blue, yellow and red ferrule sleeves. Surface grain and straightened wires are illustrative, not a photographic reproduction. From left to right: GND, TX, RX, VCC. Pin assignments are supplied by the user, not inferred from wire colors.</desc>
   <defs>
     <linearGradient id="plastic" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0" stop-color="#477744"/>
@@ -81,6 +81,6 @@
     <text x="250" y="832">GND</text>
     <text x="350" y="832">TX</text>
     <text x="450" y="832">RX</text>
-    <text x="550" y="832">5V</text>
+    <text x="550" y="832">VCC</text>
   </g>
 </svg>
