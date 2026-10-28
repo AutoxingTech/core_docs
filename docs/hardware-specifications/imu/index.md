@@ -1,6 +1,14 @@
 # IMU 产品规格书
 
-![IMU 外形图|300](./img/imu.png)
+<div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: '2rem' }}>
+
+<div style={{ flex: '0 0 280px' }}>
+
+![|250](./img/imu.png)
+
+</div>
+
+<div style={{ flex: '1 1 320px', minWidth: 0 }}>
 
 ## 功能简介
 
@@ -13,6 +21,10 @@
 
 - **AX-INS42688-U**：采用 ICM-42688-P 传感器。
 - **AX-INS45686-U**：采用 ICM-45686 传感器。
+
+</div>
+
+</div>
 
 ## 规格参数
 
@@ -32,13 +44,21 @@
 
 ## 外形与安装尺寸
 
-![IMU 外壳外形及安装尺寸图|700](./img/mounting-dimensions.svg)
+![IMU 外壳外形及安装尺寸图|500](./img/mounting-dimensions.svg)
+
+![坐标轴方向标注|700](./img/imu-front-line-art.svg)
 
 ## 接口说明
 
-### 上位机 UART 串口
+<div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '2rem' }}>
 
-![上位机 UART 接口针序示意图|450](./img/connector-pinout-line-art.svg)
+<div style={{ flex: '0 0 280px' }}>
+
+![上位机 UART 接口针序示意图|280](./img/connector-pinout-line-art.svg)
+
+</div>
+
+<div style={{ flex: '1 1 320px', minWidth: 0 }}>
 
 接口针序依次为 **GND、TX、RX、VCC**，TX/RX 方向以 IMU 模块为参照。
 
@@ -49,6 +69,10 @@
 | **TX** | 输出 | 向上位机发送 IMU 数据和时间同步应答，连接上位机 RX |
 | **RX** | 输入 | 接收时间同步请求，连接上位机 TX |
 | **VCC** | 电源输入 | 为 IMU 模块供电，输入范围 4.5～5.5 V |
+
+</div>
+
+</div>
 
 ### 串口参数
 
@@ -193,16 +217,6 @@ offset = ((T1 - T2) + (T4 - T3)) / 2
 - `T4`：主机收到应答时刻
 
 完成同步后，收到的数据帧可按 `IMU 本地时间 + offset = ROS / 上位机时间` 方式换算，直接用于消息时间戳。建议同步频率约每 1~5 秒一次，以补偿晶振漂移带来的时间偏差。
-
-## 坐标轴方向
-
-![IMU 模块顶视图及 X、Y、Z 坐标轴方向标注|800](./img/imu-front-line-art.svg)
-
-:::warning
-坐标轴方向应以实际产品上的贴图标注为准，安装时不得仅凭接口朝向或外观估计。
-:::
-
-图为模块俯视图，标注了模块的 X、Y、Z 三轴方向。
 
 ## 使用注意事项
 
