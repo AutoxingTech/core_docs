@@ -18,6 +18,29 @@ npm start
 
 This starts a local development server at http://localhost:3000
 
+### Export a Document to PDF
+
+Install the project's dependencies and Playwright's headless Chromium:
+
+```bash
+pnpm install
+pnpm exec playwright install chromium-headless-shell
+```
+
+On Linux, Chromium may also require system libraries; see the
+[Playwright installation guide](https://playwright.dev/docs/intro#system-requirements).
+Install a Chinese font such as Noto Sans CJK to render Chinese text correctly.
+
+Start the documentation server with `pnpm start`, then export a document using
+its full page URL and the desired output path:
+
+```bash
+pnpm run export:pdf http://localhost:3000/core_docs/docs/hardware-specifications/imu/ docs/hardware-specifications/imu/imu-specification.pdf
+```
+
+The output uses A4 print layout and overwrites an existing file at that path.
+Check that the server shows the latest document before exporting.
+
 ### Build
 
 ```bash

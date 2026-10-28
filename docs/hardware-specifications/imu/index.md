@@ -1,4 +1,4 @@
-# IMU 产品规格书
+# AX-IN42688-U IMU 产品规格书
 
 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: '2rem' }}>
 

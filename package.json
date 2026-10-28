@@ -13,6 +13,7 @@
         "serve": "docusaurus serve",
         "write-translations": "docusaurus write-translations",
         "write-heading-ids": "docusaurus write-heading-ids",
+        "export:pdf": "node scripts/export-pdf.js",
         "predeploy": "pnpm run build",
         "deploy:github": "GIT_USER=git USE_SSH=true pnpm run deploy"
     },
@@ -28,7 +29,8 @@
     },
     "devDependencies": {
         "@docusaurus/module-type-aliases": "^3.10.2",
-        "@docusaurus/types": "^3.10.2"
+        "@docusaurus/types": "^3.10.2",
+        "playwright": "1.64.1"
     },
     "browserslist": {
         "production": [
