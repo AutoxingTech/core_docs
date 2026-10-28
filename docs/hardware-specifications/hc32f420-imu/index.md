@@ -32,7 +32,7 @@
 
 ## 外形与安装尺寸
 
-![IMU 外壳外形及安装尺寸图|700](./img/mounting-dimensions.webp)
+![IMU 外壳外形及安装尺寸图|700](./img/mounting-dimensions.svg)
 
 ## 接口说明
 

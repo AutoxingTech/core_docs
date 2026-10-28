@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16 -24 100 66" role="img" aria-labelledby="title description">
+  <title id="title">IMU mounting dimensions</title>
+  <desc id="description">Overall dimensions 55 by 37 millimetres, horizontal hole spacing 48 millimetres, vertical hole spacing 29 millimetres, and holes 4.3 millimetres in diameter. Unspecified features are approximate.</desc>
+  <g fill="none" stroke="black" stroke-linejoin="round">
+    <path d="M 2 0 H 53 L 55 2 V 35 L 53 37 H 2 L 0 35 V 2 Z" stroke-width="0.45"/>
+    <path d="M 9.5 0 L 7.5 2 V 35 L 9.5 37 M 45.5 0 L 47.5 2 V 35 L 45.5 37" stroke-width="0.45"/>
+    <g stroke-width="0.35">
+      <circle cx="3.5" cy="18.5" r="2.15"/>
+      <circle cx="51.5" cy="4" r="2.15"/>
+      <circle cx="51.5" cy="33" r="2.15"/>
+    </g>
+    <g stroke-width="0.18">
+      <path d="M 0 0 V -23 M 55 0 V -23 M 3.5 18.5 V -18 M 51.5 4 V -18 M 7.5 0 V -12 M 47.5 0 V -12"/>
+      <path d="M 0 -20 H 55 M 3.5 -15 H 51.5 M 7.5 -10 H 47.5"/>
+      <path d="M 0 0 H -15 M 0 37 H -15 M 51.5 4 H 64 M 51.5 33 H 64"/>
+      <path d="M -12 0 V 37 M 60 4 V 33"/>
+      <path d="M 52.8 2.3 L 63 -5 H 67"/>
+    </g>
+  </g>
+  <g fill="white">
+    <rect x="24" y="-22.7" width="7" height="5"/>
+    <rect x="24" y="-17.7" width="7" height="5"/>
+    <rect x="24" y="-12.7" width="7" height="5"/>
+    <rect x="-15" y="16" width="6" height="5"/>
+    <rect x="57" y="16" width="6" height="5"/>
+  </g>
+  <g fill="black" font-family="serif" font-size="4.3" text-anchor="middle">
+    <text x="27.5" y="-18.5">55</text>
+    <text x="27.5" y="-13.5">48</text>
+    <text x="27.5" y="-8.5">40</text>
+    <text x="-12" y="20">37</text>
+    <text x="60" y="20">29</text>
+    <text x="74" y="-3">⌀ 4.3</text>
+  </g>
+</svg>
