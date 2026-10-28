@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title description">
+  <title id="title">XT60(2+4) connector signal pinout</title>
+  <desc id="description">Colored front view in the same orientation as the supplied photograph: four small signal pins on the left and two large power contacts on the right, with the keyed end facing right. Signal assignments supplied by the user: upper left TX, lower left RX, upper right 3.3V, lower right GND. Power contact polarity is not specified. Illustrative geometry, not a dimensional drawing.</desc>
+  <defs>
+    <linearGradient id="plastic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" stop-color="#f7cf35"/>
+      <stop offset="0.48" stop-color="#edb91c"/>
+      <stop offset="1" stop-color="#dfaa12"/>
+    </linearGradient>
+    <linearGradient id="recess" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#95601d"/>
+      <stop offset="0.23" stop-color="#bc8121"/>
+      <stop offset="0.7" stop-color="#d9a12b"/>
+      <stop offset="1" stop-color="#a96b17"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#fff1bd"/>
+      <stop offset="0.2" stop-color="#d7b35c"/>
+      <stop offset="0.43" stop-color="#f8df91"/>
+      <stop offset="0.7" stop-color="#a77728"/>
+      <stop offset="1" stop-color="#e9c56e"/>
+    </linearGradient>
+    <radialGradient id="pin" cx="34%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#fff5c9"/>
+      <stop offset="0.28" stop-color="#f1d37b"/>
+      <stop offset="0.74" stop-color="#c79432"/>
+      <stop offset="1" stop-color="#96651e"/>
+    </radialGradient>
+    <radialGradient id="contact-hole" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#775021"/>
+      <stop offset="1" stop-color="#3f2e1c"/>
+    </radialGradient>
+    <pattern id="grain" width="11" height="13" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r="0.65" fill="#fff" opacity="0.15"/>
+      <circle cx="8" cy="10" r="0.6" fill="#875a10" opacity="0.12"/>
+    </pattern>
+    <g id="signal-pin" stroke-linejoin="round">
+      <circle r="31" fill="#866025" stroke="#8c621c" stroke-width="2"/>
+      <circle r="27" fill="url(#gold)" stroke="#f4d994" stroke-width="2"/>
+      <circle r="20" fill="url(#pin)" stroke="#aa7b29" stroke-width="1.5"/>
+      <path d="M-12 -9 A15 15 0 0 1 2 -16" fill="none" stroke="#fff4ce" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="power-contact" stroke-linejoin="round">
+      <circle r="79" fill="#956424" stroke="#895c1e" stroke-width="3"/>
+      <circle r="73" fill="url(#gold)" stroke="#efd28c" stroke-width="2"/>
+      <circle r="43" fill="url(#contact-hole)" stroke="#b18a40" stroke-width="3"/>
+      <path d="M-13 -70 L-9 -43 L-2 -43 L-5 -73 Z M62 39 L37 25 L33 31 L56 49 Z M-56 49 L-33 31 L-37 25 L-62 39 Z" fill="#694c25" stroke="#b18a40" stroke-width="1.5"/>
+      <path d="M-61 -27 A67 67 0 0 1 -29 -60 M16 64 A66 66 0 0 1 -27 61" fill="none" stroke="#fff0bb" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <path id="signal-leaders" d="M225 109 V244 M370 109 V244 M225 466 V586 M370 466 V586"/>
+  </defs>
+  <rect width="1200" height="660" fill="#fff"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="70" y="150" width="1060" height="410" rx="29" fill="url(#plastic)" stroke="#b98b15" stroke-width="3"/>
+    <rect x="78" y="158" width="1044" height="394" rx="22" fill="url(#grain)"/>
+    <path d="M99 165 H1101 M84 184 V528" fill="none" stroke="#ffe578" stroke-width="3" opacity="0.65"/>
+    <rect x="120" y="195" width="320" height="320" rx="8" fill="url(#recess)" stroke="#b3811d" stroke-width="3"/>
+    <path d="M132 503 V207 H428" fill="none" stroke="#85591e" stroke-width="5" opacity="0.45"/>
+    <path d="M138 505 H429 V214" fill="none" stroke="#edbf49" stroke-width="3" opacity="0.6"/>
+    <path d="M485 212 H1003 L1078 287 V428 L1003 503 H485 Z" fill="url(#recess)" stroke="#af7b1c" stroke-width="3"/>
+    <path d="M497 491 V224 H997 L1066 292" fill="none" stroke="#85591e" stroke-width="5" opacity="0.4"/>
+    <path d="M500 493 H999 L1068 424 V303" fill="none" stroke="#edbf49" stroke-width="3" opacity="0.6"/>
+    <path d="M780 263 H831 V451 H780 Z" fill="#ba8226" stroke="#a7751f" stroke-width="2"/>
+    <path d="M780 451 H831 V503 H780 Z" fill="url(#plastic)" stroke="#be8a1f" stroke-width="2"/>
+    <path d="M786 458 H825 V497" fill="none" stroke="#f9d65d" stroke-width="2"/>
+    <use href="#signal-pin" transform="translate(225 275)"/>
+    <use href="#signal-pin" transform="translate(370 275)"/>
+    <use href="#signal-pin" transform="translate(225 435)"/>
+    <use href="#signal-pin" transform="translate(370 435)"/>
+    <use href="#power-contact" transform="translate(650 355)"/>
+    <use href="#power-contact" transform="translate(955 355)"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <use href="#signal-leaders" stroke="#fff" stroke-width="7"/>
+    <use href="#signal-leaders" stroke="#343a40" stroke-width="2.5"/>
+  </g>
+  <g fill="#202020" font-family="DejaVu Sans, sans-serif" font-size="32" font-weight="bold" text-anchor="middle">
+    <text x="225" y="92">TX</text>
+    <text x="370" y="92">3.3V</text>
+    <text x="225" y="625">RX</text>
+    <text x="370" y="625">GND</text>
+  </g>
+</svg>
