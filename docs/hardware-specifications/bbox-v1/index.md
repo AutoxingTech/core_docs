@@ -1,3 +1,7 @@
+---
+description: 机器人自主定位与导航主控盒子详细规格、硬件接口定义与适配设备说明。
+---
+
 # BBox 产品说明书
 
 ![BBox 侧视图|600](./img/bbox-v1-side-view.png)
