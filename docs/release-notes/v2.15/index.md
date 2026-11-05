@@ -9,8 +9,7 @@ sidebar_position: 1
 ## 对外接口 API
 
 1. **实时推送话题支持通配符** - 话题白名单可使用 `*`、`?`（不跨层级），例如 `/detected_features/*`，新增话题不必逐条登记。
-2. **新增录包回放服务** - 提供 `GET /ros/bag-player/{bags|recordings}/<包名>/{meta|index|messages}` 接口：先取整包的消息索引，再按段下发录包里的原始消息字节，不再逐条转 JSON；任何话题类型都能回放，新增消息类型不必再补转换器。
-3. **任务状态新增字段** - [/planning_state](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-navigation.html#planning-state) 增加 `expected_cargo_action`，上位机可预判任务接下来要执行的装卸动作。
+2. **任务状态新增字段** - [/planning_state](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-navigation.html#planning-state) 增加 `expected_cargo_action`，上位机可预判任务接下来要执行的装卸动作。
 
 <BugFixes>
 - 陀螺零偏未标定（NaN）时 `/imu_state` 整条消息不推送。
