@@ -12,7 +12,7 @@ sidebar_position: 1
 2. **新增实时推送通道** - 语义点云、[深度相机图像与点云](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-perception.html#depth-camera-images)（含强度）、地形扫描、[货架状态](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-cargo.html#detected-rack-states)、[拖挂状态](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-cargo.html#detected-trailer)、4G 网络状态。
 3. **地图与录像下载支持大文件与断点续传** - 大文件不再中断或超时。
 4. **新增录包流式回放接口** - 新增 [数据包流式回放 API](https://autoxingtech.github.io/axbot_rest_book/zh/reference/bags.html#bag-streaming-api)：先取整包的消息索引，再按段下发录包里的原始消息字节，不再逐条转 JSON；任何话题类型都能回放，新增消息类型不必再补转换器。
-5. **新增位姿查询与定位数据推送** - 提供[整车与拖挂位姿查询](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-localization.html#query-pose)；[定位数据推送](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-localization.html#positioning-state)增加经纬度与陀螺零偏字段。
+5. **新增位姿查询与定位数据推送** - 提供[整车与拖挂位姿查询](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-localization.html#query-pose)；[GNSS/INS 数据推送](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-environment.html#devpvt)增加经纬度，[/imu_state](https://autoxingtech.github.io/axbot_rest_book/zh/reference/websocket-chassis.html#imu-state) 增加陀螺零偏与零偏目标值。
 6. **新增激光位姿标定接口** - 支持顶置、前、后激光的位姿标定，可由上位机直接触发。
 7. **新增装卸与拖钩服务端点** - 支持[装载 / 卸载货物](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-cargo.html#load-unload-cargo)、[清除拖钩故障](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-cargo.html#clear-towing-hook-error)的触发接口。
 
