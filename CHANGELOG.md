@@ -1,5 +1,6 @@
 # Changelog
 
+- 2026-11-05 docs: Add 2.15 release notes
 - 2026-11-05 docs: Add 2.13 release notes
 - 2026-11-05 docs: Add 2.14 release notes
 - 2026-11-05 power-box: Add hardware revision differences

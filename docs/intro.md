@@ -56,4 +56,4 @@ sidebar_position: 1
 
 查阅各版本的软件功能变化、新增硬件支持与升级注意事项：
 
-- [**版本更新说明汇总**](/docs/release-notes) — 浏览各历史版本的功能演进与升级须知（最新：[2.14 版本更新说明](./release-notes/v2.14/index.md)）
+- [**版本更新说明汇总**](/docs/release-notes) — 浏览各历史版本的功能演进与升级须知（最新：[2.15 版本更新说明](./release-notes/v2.15/index.md)）
