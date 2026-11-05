@@ -9,7 +9,7 @@ sidebar_position: 1
 ## 对外接口 API
 
 1. **实时推送话题支持通配符** - 话题白名单可使用 `*`、`?`（不跨层级），例如 `/detected_features/*`，新增话题不必逐条登记。
-2. **录包回放支持 protobuf 话题** - `/slam/state`、`/planning_state`、`/mast_state` 等话题已改用 protobuf 编码，回放不再丢数据。
+2. **新增录包回放服务** - 提供 `GET /ros/bag-player/{bags|recordings}/<包名>/{meta|index|messages}` 接口：先取整包的消息索引，再按段下发录包里的原始消息字节，不再逐条转 JSON；任何话题类型都能回放，新增消息类型不必再补转换器。
 3. **任务状态新增字段** - `/planning_state` 增加 `expected_cargo_action`，上位机可预判任务接下来要执行的装卸动作。
 
 <BugFixes>
