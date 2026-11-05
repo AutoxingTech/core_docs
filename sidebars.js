@@ -109,6 +109,20 @@ const sidebars = {
                 'data-collection/index',
             ],
         },
+        {
+            type: 'category',
+            label: '版本更新',
+            link: {
+                type: 'generated-index',
+                slug: '/release-notes',
+                title: '版本更新说明',
+                description: '各版本的功能变化与升级注意事项。',
+            },
+            collapsed: false,
+            items: [
+                'release-notes/v2.14/index',
+            ],
+        },
     ],
 };
 

@@ -164,8 +164,8 @@ const config = {
                                 href: 'https://autoxingtech.github.io/axbot_rest_book/',
                             },
                             {
-                                label: 'GitHub 源码仓库',
-                                href: 'https://github.com/autoxingtech/core_docs',
+                                label: '版本更新说明',
+                                to: '/docs/release-notes',
                             },
                         ],
                     },

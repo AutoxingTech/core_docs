@@ -82,9 +82,52 @@ const ImageRow = ({ children }) => (
     </div>
 );
 
+function BugFixes({ children, title = '修复', defaultOpen = false }) {
+    const [isOpen, setIsOpen] = useState(defaultOpen);
+    const [count, setCount] = useState(0);
+    const wrapperRef = useRef(null);
+
+    useEffect(() => {
+        if (wrapperRef.current) {
+            const items = wrapperRef.current.querySelectorAll('.bug-fixes-content > ul > li, .bug-fixes-content li');
+            setCount(items.length);
+        }
+    }, [children]);
+
+    return (
+        <div ref={wrapperRef} className={`bug-fixes-block ${isOpen ? 'is-open' : ''}`}>
+            <button
+                type="button"
+                className="bug-fixes-toggle"
+                onClick={() => setIsOpen((prev) => !prev)}
+                aria-expanded={isOpen}
+            >
+                <svg
+                    className="bug-fixes-chevron"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"
+                    />
+                </svg>
+                <span className="bug-fixes-title">{title}</span>
+                {count > 0 && <span className="bug-fixes-count">{count} 项</span>}
+            </button>
+            <div className="bug-fixes-content" hidden={!isOpen}>
+                {children}
+            </div>
+        </div>
+    );
+}
+
 export default {
     ...MDXComponents,
     ImageRow,
+    BugFixes,
     img: (props) => {
         const alt = props.alt || '';
         let caption = alt;

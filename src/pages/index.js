@@ -101,10 +101,11 @@ const WORKFLOW_STEPS = [
         step: '04',
         phase: '故障诊断与数据运维',
         title: '现场快速排障与运行数据管理',
-        desc: '基于蜂鸣器报警码、端子导通检测快速定位电源及外设短路故障，了解底盘本地业务数据与诊断日志规范。',
+        desc: '基于蜂鸣器报警码、端子导通检测快速定位电源及外设短路故障，了解底盘本地业务数据、诊断日志规范与版本升级变化。',
         links: [
             { label: '电源控制盒常见故障排查', to: '/docs/troubleshooting/power-box/' },
             { label: '底盘数据收集、存储与隐私说明', to: '/docs/data-collection/' },
+            { label: '版本更新说明', to: '/docs/release-notes' },
         ],
     },
 ];

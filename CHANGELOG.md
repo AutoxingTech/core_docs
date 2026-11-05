@@ -1,5 +1,6 @@
 # Changelog
 
+- 2026-11-05 docs: Add 2.14 release notes
 - 2026-11-05 power-box: Add hardware revision differences
 - 2026-10-29 ui: Redesign site theme, logo, and homepage layout
 - 2026-10-28 docs: Add PDF export for documentation

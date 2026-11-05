@@ -51,3 +51,9 @@ sidebar_position: 1
 
 - [**电源控制盒故障排查**](./troubleshooting/power-box/index.md) — 针对按下软开关不开机、开机 5 秒长鸣短路保护、运动中意外断电等问题的系统化排查
 - [**机器人底盘的数据收集与存储**](./data-collection/index.md) — 本地业务数据、诊断调查数据与云端上报数据的分类及访问方式
+
+## 版本更新 (Release Notes)
+
+查阅各版本的软件功能变化、新增硬件支持与升级注意事项：
+
+- [**版本更新说明汇总**](/docs/release-notes) — 浏览各历史版本的功能演进与升级须知（最新：[2.14 版本更新说明](./release-notes/v2.14/index.md)）
