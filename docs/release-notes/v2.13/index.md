@@ -8,12 +8,12 @@ sidebar_position: 2
 
 ## 对外接口 API
 
-1. **新增网络与设备管理接口** - WiFi 列表与配置、路由模式、主机名、时间同步。
-2. **新增货架位姿查询** - 新增 `rack_pose` 查询接口，与整车位姿查询并列。
-3. **新增顶升与拖钩服务端点** - 顶升自检、拖钩锁定与释放。
+1. **新增网络与设备管理接口** - [WiFi 列表与配置](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-network.html#configure-wi-fi)、[路由模式](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-network.html#set-route-mode)、[主机名](https://autoxingtech.github.io/axbot_rest_book/zh/reference/hostnames.html)、[时间同步](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-system.html#step-time)。
+2. **新增货架位姿查询** - 新增 [`rack_pose`](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-localization.html#rack-pose) 查询接口，与整车位姿查询并列。
+3. **新增顶升与拖钩服务端点** - [顶升自检](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-cargo.html#jack-device-up-down-self-check)、[拖钩锁定](https://autoxingtech.github.io/axbot_rest_book/zh/reference/services-cargo.html#towing-hook-lock)与释放。
 4. **新增转向错误清除接口** - 可清除转向角度错误与转向零点搜索错误。
 5. **新增激光雷达角度标定接口** - 支持通过接口触发激光雷达角度标定，流程见 [激光雷达标定](../../calibration/lidar-calibration/index.md)。
-6. **地图接口新增信息与缩略图** - 可获取地图信息 JSON、地图缩略图，并支持从本地文件导入地图。
+6. **地图接口新增信息与缩略图** - 可获取[地图信息 JSON](https://autoxingtech.github.io/axbot_rest_book/zh/reference/maps.html#get-map-detail)、地图缩略图，并支持[从本地文件导入地图](https://autoxingtech.github.io/axbot_rest_book/zh/reference/maps.html#create-from-local-file)。
 
 <BugFixes>
 - 录包消息中的 NaN / Inf 浮点值导致 JSON 序列化失败。
