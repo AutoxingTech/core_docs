@@ -1,3 +1,7 @@
+---
+description: 100Hz 六轴惯性测量单元技术参数、UART 通讯协议与硬件时间同步说明。
+---
+
 # AX-IN42688-U IMU 产品规格书
 
 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: '2rem' }}>

@@ -121,6 +121,7 @@ const sidebars = {
             collapsed: false,
             items: [
                 'release-notes/v2.14/index',
+                'release-notes/v2.13/index',
             ],
         },
     ],

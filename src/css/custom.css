@@ -72,11 +72,35 @@
 
 /* Navbar Frosted Glass & Polish */
 .navbar {
-    backdrop-filter: saturate(180%) blur(14px);
-    -webkit-backdrop-filter: saturate(180%) blur(14px);
     border-bottom: 1px solid var(--ax-card-border);
     box-shadow: none;
     padding: 0.5rem 1.5rem;
+}
+
+/* backdrop-filter makes .navbar a containing block for its fixed-position
+   descendants, which clips the mobile navigation drawer down to the navbar
+   height. Keep the blur on desktop only, where the drawer never renders. */
+@media (min-width: 997px) {
+    .navbar {
+        backdrop-filter: saturate(180%) blur(14px);
+        -webkit-backdrop-filter: saturate(180%) blur(14px);
+    }
+}
+
+@media (max-width: 996px) {
+
+    /* Opaque background replaces the frosted glass on mobile. */
+    .navbar,
+    .navbar-sidebar {
+        background-color: var(--ax-card-bg);
+    }
+
+    /* Our .navbar__link display rule outranks Infima's mobile
+       .navbar__item { display: none }, so restore it: on mobile these links
+       belong to the navigation drawer only. */
+    .navbar__item.navbar__link {
+        display: none;
+    }
 }
 
 .navbar__title {
@@ -181,10 +205,73 @@ div[class*='docItemContainer']>article {
     margin-bottom: 1.5rem;
 }
 
+/* Generated Index Page Card Surface (wraps breadcrumbs + header + card list, excludes footer pagination) */
+div[class*='generatedIndexPage']>nav.theme-doc-breadcrumbs {
+    background-color: var(--ifm-background-surface-color);
+    border: 1px solid var(--ax-card-border);
+    border-bottom: none;
+    border-radius: 14px 14px 0 0;
+    padding: 2.25rem 2.5rem 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0 !important;
+}
+
+div[class*='generatedIndexPage']>header {
+    background-color: var(--ifm-background-surface-color);
+    border-left: 1px solid var(--ax-card-border);
+    border-right: 1px solid var(--ax-card-border);
+    padding: 0 2.5rem 0.5rem;
+    margin: 0 !important;
+}
+
+div[class*='generatedIndexPage']>article {
+    background-color: var(--ifm-background-surface-color);
+    border: 1px solid var(--ax-card-border);
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    padding: 1rem 2.5rem 2.25rem;
+    box-shadow: var(--ax-card-shadow);
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem;
+}
+
+div[class*='generatedIndexPage']>footer {
+    margin-top: 0 !important;
+}
+
+div[class*='generatedIndexPage'] header h1 {
+    font-size: 1.75rem !important;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--ax-card-border);
+    margin-bottom: 1rem;
+}
+
+div[class*='generatedIndexPage'] header p {
+    color: var(--ifm-font-color-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 768px) {
     div[class*='docItemContainer']>article {
         padding: 1.25rem 1.1rem;
         border-radius: 10px;
+    }
+
+    div[class*='generatedIndexPage']>nav.theme-doc-breadcrumbs {
+        padding: 1.25rem 1.1rem 0.5rem;
+        border-radius: 10px 10px 0 0;
+    }
+
+    div[class*='generatedIndexPage']>header {
+        padding: 0 1.1rem 0.5rem;
+    }
+
+    div[class*='generatedIndexPage']>article {
+        padding: 0.75rem 1.1rem 1.25rem;
+        border-radius: 0 0 10px 10px;
     }
 }
 
