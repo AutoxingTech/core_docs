@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="840" viewBox="0 0 960 840" role="img" aria-labelledby="title description">
+  <title id="title">CAN IO 板 35 针主接口针号定位</title>
+  <desc id="description">模块端插合面正视图，连接器位于外壳下方。
+    三排触针分别为上排 1 至 12、中排 13 至 23、下排 24 至 35，均从左向右递增。
+    标出各排两端针号：上排 1 和 12、中排 13 和 23、下排 24 和 35。
+    外壳轮廓参考用户实物照片并逆时针旋转 90 度；针序及定位筋参考 TE Connectivity 776231-1 客户图纸 776231 第 1 页。
+    本图用于针号定位，不用于结构尺寸测量。</desc>
+  <metadata>Pin numbering source: https://www.te.com/en/product-776231-1.html (Customer Drawing 776231, sheet 1).</metadata>
+  <defs>
+    <linearGradient id="case" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#41484b"/>
+      <stop offset="1" stop-color="#252b2e"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#454e52"/>
+      <stop offset="1" stop-color="#1c2225"/>
+    </linearGradient>
+    <radialGradient id="metal" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#fffdf0"/>
+      <stop offset="0.45" stop-color="#d3d1bd"/>
+      <stop offset="1" stop-color="#848b88"/>
+    </radialGradient>
+    <pattern id="grain" width="13" height="13" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r="0.7" fill="#fff" opacity="0.08"/>
+      <path d="m9 9 2 1" stroke="#000" stroke-width="1" opacity="0.14"/>
+    </pattern>
+    <g id="pin">
+      <circle r="9" fill="#0b1012" stroke="#5e696d" stroke-width="1.5"/>
+      <circle r="5.8" fill="url(#metal)" stroke="#afb5ad" stroke-width="1"/>
+      <circle cx="-1.5" cy="-1.5" r="1.8" fill="#fff" opacity="0.75"/>
+    </g>
+  </defs>
+  <rect width="960" height="840" fill="#fff"/>
+  <!-- Rotate the module, pins and leaders together; keep labels upright below. -->
+  <g transform="translate(0 800) rotate(-90)">
+  <!-- Simplified module outline, with the connector on the left before rotation. -->
+  <rect x="168" y="98" width="480" height="754" rx="48" fill="#1c2225" stroke="#151b1e" stroke-width="3"/>
+  <rect x="154" y="84" width="480" height="754" rx="48" fill="url(#case)" stroke="#555f63" stroke-width="3"/>
+  <rect x="164" y="94" width="460" height="734" rx="39" fill="url(#grain)" stroke="#1f272b" stroke-width="2"/>
+  <!-- TE 776231 mating face rotated clockwise from the manufacturer's drawing. -->
+  <g transform="translate(505 120) rotate(90)" stroke-linejoin="round">
+    <rect x="60" y="45" width="580" height="260" rx="67" fill="#151b1e" stroke="#080d0f" stroke-width="3"/>
+    <rect x="70" y="55" width="560" height="240" rx="59" fill="url(#rim)" stroke="#647074" stroke-width="2.5"/>
+    <rect x="84" y="69" width="532" height="212" rx="46" fill="#0e1518" stroke="#080d0f" stroke-width="3"/>
+    <rect x="105" y="99" width="490" height="152" rx="28" fill="#263034" stroke="#343f43" stroke-width="2"/>
+    <!-- Inner guide ribs; the two wider central ribs distinguish the lower side. -->
+    <g fill="#3b474b" stroke="#6b7779" stroke-width="1">
+      <path d="M153 70 v11 q4 5 8 0 V70 Z M193 70 v11 q4 5 8 0 V70 Z M233 70 v11 q4 5 8 0 V70 Z M273 70 v11 q4 5 8 0 V70 Z M313 70 v11 q4 5 8 0 V70 Z M353 70 v11 q4 5 8 0 V70 Z M393 70 v11 q4 5 8 0 V70 Z M433 70 v11 q4 5 8 0 V70 Z M473 70 v11 q4 5 8 0 V70 Z M513 70 v11 q4 5 8 0 V70 Z M553 70 v11 q4 5 8 0 V70 Z"/>
+      <path d="M153 280 v-11 q4-5 8 0 v11 Z M193 280 v-11 q4-5 8 0 v11 Z M233 280 v-11 q4-5 8 0 v11 Z M273 280 v-11 q4-5 8 0 v11 Z M307 280 v-24 q7-6 14 0 v24 Z M377 280 v-24 q7-6 14 0 v24 Z M433 280 v-11 q4-5 8 0 v11 Z M473 280 v-11 q4-5 8 0 v11 Z M513 280 v-11 q4-5 8 0 v11 Z M553 280 v-11 q4-5 8 0 v11 Z"/>
+      <path d="M85 128 h10 v7 H85 Z M85 171 h10 v8 H85 Z M85 214 h10 v7 H85 Z M615 128 h-10 v7 h10 Z M615 171 h-10 v8 h10 Z M615 214 h-10 v7 h10 Z"/>
+    </g>
+    <g id="pins">
+      <!-- Row 1: 1–12. -->
+      <use href="#pin" x="130" y="135" data-pin="1"/>
+      <use href="#pin" x="170" y="135" data-pin="2"/>
+      <use href="#pin" x="210" y="135" data-pin="3"/>
+      <use href="#pin" x="250" y="135" data-pin="4"/>
+      <use href="#pin" x="290" y="135" data-pin="5"/>
+      <use href="#pin" x="330" y="135" data-pin="6"/>
+      <use href="#pin" x="370" y="135" data-pin="7"/>
+      <use href="#pin" x="410" y="135" data-pin="8"/>
+      <use href="#pin" x="450" y="135" data-pin="9"/>
+      <use href="#pin" x="490" y="135" data-pin="10"/>
+      <use href="#pin" x="530" y="135" data-pin="11"/>
+      <use href="#pin" x="570" y="135" data-pin="12"/>
+      <!-- Row 2: 13–23, offset by half a pitch. -->
+      <use href="#pin" x="150" y="175" data-pin="13"/>
+      <use href="#pin" x="190" y="175" data-pin="14"/>
+      <use href="#pin" x="230" y="175" data-pin="15"/>
+      <use href="#pin" x="270" y="175" data-pin="16"/>
+      <use href="#pin" x="310" y="175" data-pin="17"/>
+      <use href="#pin" x="350" y="175" data-pin="18"/>
+      <use href="#pin" x="390" y="175" data-pin="19"/>
+      <use href="#pin" x="430" y="175" data-pin="20"/>
+      <use href="#pin" x="470" y="175" data-pin="21"/>
+      <use href="#pin" x="510" y="175" data-pin="22"/>
+      <use href="#pin" x="550" y="175" data-pin="23"/>
+      <!-- Row 3: 24–35. -->
+      <use href="#pin" x="130" y="215" data-pin="24"/>
+      <use href="#pin" x="170" y="215" data-pin="25"/>
+      <use href="#pin" x="210" y="215" data-pin="26"/>
+      <use href="#pin" x="250" y="215" data-pin="27"/>
+      <use href="#pin" x="290" y="215" data-pin="28"/>
+      <use href="#pin" x="330" y="215" data-pin="29"/>
+      <use href="#pin" x="370" y="215" data-pin="30"/>
+      <use href="#pin" x="410" y="215" data-pin="31"/>
+      <use href="#pin" x="450" y="215" data-pin="32"/>
+      <use href="#pin" x="490" y="215" data-pin="33"/>
+      <use href="#pin" x="530" y="215" data-pin="34"/>
+      <use href="#pin" x="570" y="215" data-pin="35"/>
+    </g>
+  </g>
+  <!-- Row-end references, with leaders terminating outside the metal tips. -->
+  <g fill="none" stroke="#c86a27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="290" cy="250" r="13"/>
+    <circle cx="370" cy="250" r="13"/>
+    <circle cx="290" cy="690" r="13"/>
+    <circle cx="370" cy="690" r="13"/>
+    <circle cx="330" cy="270" r="13"/>
+    <circle cx="330" cy="670" r="13"/>
+    <path d="M277 250 230 152 H108 M383 250 430 152 H710 M277 690 230 790 H108 M383 690 430 790 H710"/>
+    <path d="M330 257 V80 M330 683 V880"/>
+  </g>
+  </g>
+  <g font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="bold" fill="#a44e19">
+    <text x="136" y="76">1</text>
+    <text x="770" y="76">12</text>
+    <text x="26" y="482">13</text>
+    <text x="894" y="482">23</text>
+    <text x="124" y="734">24</text>
+    <text x="762" y="734">35</text>
+  </g>
+  <g font-family="sans-serif" text-anchor="middle" fill="#323c42">
+    <text x="480" y="786" font-size="26" font-weight="bold">模块端 · 插合面正视图</text>
+    <text x="480" y="822" font-size="21">各排针号从左向右递增 →</text>
+  </g>
+</svg>
