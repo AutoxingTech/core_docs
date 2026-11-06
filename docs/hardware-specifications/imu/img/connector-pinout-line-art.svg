@@ -18,6 +18,18 @@
       <stop offset="0" stop-color="#f5b249"/>
       <stop offset="1" stop-color="#d77820"/>
     </linearGradient>
+    <linearGradient id="gnd-wire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0d52f"/>
+      <stop offset="48%" stop-color="#f0d52f"/>
+      <stop offset="52%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="vcc-wire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4c9b45"/>
+      <stop offset="48%" stop-color="#4c9b45"/>
+      <stop offset="52%" stop-color="#f28b28"/>
+      <stop offset="100%" stop-color="#f28b28"/>
+    </linearGradient>
     <linearGradient id="sleeve" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0" stop-color="#000" stop-opacity="0.38"/>
       <stop offset="0.35" stop-color="#fff" stop-opacity="0.22"/>
@@ -60,19 +72,21 @@
   </g>
   <g stroke-width="2" stroke-linejoin="round">
     <g transform="translate(250 0)" stroke="#242728">
-      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#353637"/>
+      <path d="M-9 624 H-1 V770 Q-5 775 -9 770 Z" fill="#f0d52f"/>
+      <path d="M1 624 H9 V770 Q5 775 1 770 Z" fill="#ffffff"/>
       <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#252a2b"/>
     </g>
     <g transform="translate(350 0)" stroke="#245772">
-      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#126a9e"/>
+      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#242728"/>
       <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#126a9e"/>
     </g>
     <g transform="translate(450 0)" stroke="#b4921b">
-      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#eed62d"/>
-      <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#edc52d"/>
+      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#df3f35"/>
+      <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#e64e4e"/>
     </g>
     <g transform="translate(550 0)" stroke="#a7352e">
-      <path d="M-9 624 V770 Q0 779 9 770 V624 Z" fill="#df4b38"/>
+      <path d="M-9 624 H-1 V770 Q-5 775 -9 770 Z" fill="#4c9b45"/>
+      <path d="M1 624 H9 V770 Q5 775 1 770 Z" fill="#f28b28"/>
       <path d="M-19 542 V610 L-15 624 H15 L19 610 V542 Z" fill="#e64e4e"/>
     </g>
     <path d="M232 602 H268 M332 602 H368 M432 602 H468 M532 602 H568" stroke="#fff" stroke-opacity="0.3" fill="none"/>
@@ -82,5 +96,11 @@
     <text x="350" y="832">TX</text>
     <text x="450" y="832">RX</text>
     <text x="550" y="832">VCC</text>
+  </g>
+  <g fill="#202020" font-family="DejaVu Sans, sans-serif" font-size="18" text-anchor="middle">
+    <text x="250" y="860">（黄白）</text>
+    <text x="350" y="860">（黑）</text>
+    <text x="450" y="860">（红）</text>
+    <text x="550" y="860">（绿橙）</text>
   </g>
 </svg>
