@@ -20,6 +20,7 @@ sidebar_position: 1
 - [**AX-IN42688-U 六轴 IMU 产品规格书**](./hardware-specifications/imu/index.md) — 100Hz 高精度惯性测量单元技术参数、UART 协议与硬件时间同步说明
 - [**ESP-NOW 门控/通知器产品说明书**](./hardware-specifications/esp-beacon/index.md) — 自动门无线联动控制及到达目标点声光音乐通知模块说明
 - [**CAN IO 控制盒规格书**](./hardware-specifications/can-io-box/index.md) — CAN 总线扩展的数字量输入输出控制盒规格、35 针接口定义与接线说明
+- [**助力推行手柄规格书**](./hardware-specifications/push-handle/index.md) — USB 即插即用的推行手柄，对外接口、指示灯说明与通电检查
 - [**机器人 WiFi 模块与认证说明**](./hardware-specifications/wifi-certification/index.md) — 机器人无线网卡模块构成、工作频段及型号核准认证信息
 
 ## 硬件安装与升级 (Hardware Installation)
