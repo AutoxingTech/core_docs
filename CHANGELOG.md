@@ -1,5 +1,6 @@
 # Changelog
 
+- 2026-11-13 skill: Add hardware spec review skill and public doc rules
 - 2026-11-06 io-board: Add HC32F460 specifications and wiring guide
 - 2026-11-05 docs: Add 2.15 release notes
 - 2026-11-05 docs: Add 2.13 release notes
