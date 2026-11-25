@@ -1,5 +1,6 @@
 # Changelog
 
+- 2026-11-25 docs: Revise 2.15 release notes
 - 2026-11-13 docs: Add 2.14.12 release notes
 - 2026-11-13 docs: Add push handle specification and assembly guide
 - 2026-11-13 skill: Add hardware spec review skill and public doc rules
